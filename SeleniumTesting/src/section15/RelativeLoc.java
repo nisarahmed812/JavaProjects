@@ -5,14 +5,14 @@ import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 import static org.openqa.selenium.support.locators.RelativeLocator.with;
 
 public class RelativeLoc {
 
 	public static void main(String[] args) {
-		WebDriver driver = WebDriverManager.chromedriver().create();
+		WebDriver driver = new ChromeDriver();
 		driver.get("https://rahulshettyacademy.com/angularpractice/");
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		

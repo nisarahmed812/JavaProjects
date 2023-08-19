@@ -27,11 +27,11 @@ Body:
     ]
 }
 Request method:	GET
-Request URI:	https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=df6da3074079e62ac1927e9b69df1a4e
+Request URI:	https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=8b67a4f41f8fb2f57a6ae1a489b935ae
 Proxy:			<none>
 Request params:	<none>
 Query params:	key=qaclick123
-				place_id=df6da3074079e62ac1927e9b69df1a4e
+				place_id=8b67a4f41f8fb2f57a6ae1a489b935ae
 Form params:	<none>
 Path params:	<none>
 Headers:		Accept=*/*
@@ -68,11 +68,11 @@ Body:
     ]
 }
 Request method:	GET
-Request URI:	https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=b849e295ec647e09a630919afd3febc0
+Request URI:	https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=66d8c12f216236fd05a5e416c94ee5d6
 Proxy:			<none>
 Request params:	<none>
 Query params:	key=qaclick123
-				place_id=b849e295ec647e09a630919afd3febc0
+				place_id=66d8c12f216236fd05a5e416c94ee5d6
 Form params:	<none>
 Path params:	<none>
 Headers:		Accept=*/*
@@ -93,5 +93,5 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "place_id": "b849e295ec647e09a630919afd3febc0"
+    "place_id": "66d8c12f216236fd05a5e416c94ee5d6"
 }

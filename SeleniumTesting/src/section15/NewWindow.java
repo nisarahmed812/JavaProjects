@@ -12,13 +12,12 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.WindowType;
-
-import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 public class NewWindow {
 
 	public static void main(String[] args) throws IOException {
-		WebDriver driver = WebDriverManager.chromedriver().create();
+		WebDriver driver = new ChromeDriver();
 		driver.get("https://rahulshettyacademy.com/angularpractice/");
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		

@@ -4,6 +4,7 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.PrintStream;
+import java.nio.file.Paths;
 import java.util.Properties;
 
 import io.restassured.RestAssured;
@@ -31,8 +32,12 @@ public class Utils {
 	}
 	
 	public static String getGlobalValue(String key) throws IOException {
+		String userHome = System.getProperty("user.home");
+		String workspacePath = "git/JavaProjects/APIFramework/src/test/java/resources/global.properties";
+		String fullPath = Paths.get(userHome, workspacePath).toString();
+		
 		Properties prop = new Properties();
-		FileInputStream fis = new FileInputStream("C:\\Users\\iamni\\eclipse-workspace\\APIFramework\\src\\test\\java\\resources\\global.properties");
+		FileInputStream fis = new FileInputStream(fullPath);
 		prop.load(fis);
 		return prop.getProperty(key);
 	}
