@@ -2,14 +2,14 @@
 <testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-20T13:11:59 IST" name="Suite" finished-at="2023-08-20T13:11:59 IST" duration-ms="0">
+  <suite started-at="2023-08-20T16:17:36 IST" name="Suite" finished-at="2023-08-20T16:17:36 IST" duration-ms="0">
     <groups>
-      <group name="Purchase">
-        <method signature="SubmitOrderTest.submitOrder(java.util.HashMap)[pri:0, instance:nahmed.Tests.SubmitOrderTest@6cc558c6]" name="submitOrder" class="nahmed.Tests.SubmitOrderTest"/>
-      </group> <!-- Purchase -->
       <group name="ErrorHandling">
-        <method signature="ErrorValidationsTest.LoginErrorValidation()[pri:0, instance:nahmed.Tests.ErrorValidationsTest@61544ae6]" name="LoginErrorValidation" class="nahmed.Tests.ErrorValidationsTest"/>
+        <method signature="ErrorValidationsTest.LoginErrorValidation()[pri:0, instance:nahmed.Tests.ErrorValidationsTest@6bffbc6d]" name="LoginErrorValidation" class="nahmed.Tests.ErrorValidationsTest"/>
       </group> <!-- ErrorHandling -->
+      <group name="Purchase">
+        <method signature="SubmitOrderTest.submitOrder(java.util.HashMap)[pri:0, instance:nahmed.Tests.SubmitOrderTest@132e0cc]" name="submitOrder" class="nahmed.Tests.SubmitOrderTest"/>
+      </group> <!-- Purchase -->
     </groups>
   </suite> <!-- Suite -->
 </testng-results>
