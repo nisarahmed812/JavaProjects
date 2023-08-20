@@ -2,12 +2,11 @@ package nahmed.Tests;
 
 
 
-import static org.junit.Assert.assertEquals;
 import static org.testng.Assert.assertEquals;
 
 import java.io.IOException;
 
-import org.junit.Assert;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import nahmed.TestComponents.BaseTest;

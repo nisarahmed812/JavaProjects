@@ -13,13 +13,15 @@ import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 import nahmed.pageObjects.LandingPage;
 
 public class BaseTest {
@@ -36,13 +38,13 @@ public class BaseTest {
 		String browserName = prop.getProperty("browser");
 		
 		if(browserName.equalsIgnoreCase("chrome")) {
-			driver = WebDriverManager.chromedriver().create();
+			driver = new ChromeDriver();
 		}
 		else if(browserName.equalsIgnoreCase("firefox")) {
-			driver = WebDriverManager.firefoxdriver().create();
+			driver = new FirefoxDriver();
 		}
 		else if(browserName.equalsIgnoreCase("edge")) {
-			driver = WebDriverManager.edgedriver().create();
+			driver = new EdgeDriver();
 		}
 		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));

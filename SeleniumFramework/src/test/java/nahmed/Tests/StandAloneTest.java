@@ -3,20 +3,20 @@ package nahmed.Tests;
 import java.time.Duration;
 import java.util.List;
 
-import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class StandAloneTest {
 
 	public static void main(String[] args) {
-		WebDriver driver = WebDriverManager.chromedriver().create();
+		WebDriver driver = new ChromeDriver();
 		driver.get("https://rahulshettyacademy.com/angularpractice/");
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.manage().window().maximize();
