@@ -4,22 +4,16 @@ public class Multiplication {
 
 	public static void main(String[] args) {
 		// print 5 Multiplication table without using Multiply operator
+		// Multiply 5*10=50 without using operator
 
-		int result = multiply(5, 10);
-		System.out.println(result);
-	}
-
-	private static int multiply(int i, int j) {
-		// i has to sum itself j times to get the result
-
+		int a = 5;
+		int b = 10;
 		int sum = 0;
-		int k = 1;
-		while (k <= j) {
 
-			sum = sum + i;
-			k++;
+		for (int i = 0; i < 10; i++) {
+			sum = sum + a;
 		}
-		return sum;
+		System.out.println("Multiplication of 5*10= " + sum + "");
 	}
 
 }

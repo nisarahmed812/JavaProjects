@@ -11,8 +11,8 @@ public class RuntimePolymorphism {
 		// Methods of WebDriver Interface which is implemented in ChromeDriver class
 		// Also Variables defined in interface class are public in nature by default
 		// public class ChromeDriver implements WebDriver
-		// WebDriver driver = new ChromeDriver(); -> In this we can only use methods of ChromeDriver
-		// WebDriver driver = new WebDriver(); -> In this we can only use methods of WebDriver
+		// WebDriver driver = new ChromeDriver(); -> In this we can only use methods of WebDriver
+		// ChromeDriver driver = new ChromeDriver(); -> In this we can only use methods of ChromeDriver
 		
 		// One class can implement multiple interfaces
 		// public class ChromeDriver implements WebDriver, MobDriver

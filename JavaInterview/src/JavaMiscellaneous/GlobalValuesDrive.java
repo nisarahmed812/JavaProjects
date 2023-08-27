@@ -15,8 +15,6 @@ public class GlobalValuesDrive {
 		System.out.println(prop.getProperty("url"));
 		prop.setProperty("browser", "chrome");
 		System.out.println(prop.getProperty("browser"));
-		FileOutputStream fos = new FileOutputStream("C:\\Users\\iamni\\eclipse-workspace\\JavaInterview\\src\\JavaMiscellaneous\\data.properties");
-		prop.store(fos, null);
 	}
 
 }
