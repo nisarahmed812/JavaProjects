@@ -30,5 +30,10 @@ public class CharOccurences {
 		// Apache Common StringUtils-> Apache Commons Lang » 3.13.0
 		int count3 = StringUtils.countMatches(str, 'c');
 		System.out.println(count3);
+
+		// streams
+		String str3 = "Testing Solutions";
+		long charCount = str3.chars().filter(s -> (char) s == 's' || (char) s == 'i').count();
+		System.out.println(charCount);
 	}
 }
