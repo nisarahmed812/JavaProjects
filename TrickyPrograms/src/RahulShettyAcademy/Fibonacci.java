@@ -1,9 +1,9 @@
 package RahulShettyAcademy;
 
-public class Fibanocci {
+public class Fibonacci {
 
 	public static void main(String[] args) {
-		// print Fibanocci series by printing variables
+		// print Fibonacci series by printing variables
 		int a = 0;
 		int b = 1;
 		int sum = 0;

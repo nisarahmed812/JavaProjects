@@ -11,7 +11,7 @@ public class RemoveWhiteSpaces {
 		System.out.println(newString.trim());
 
 		String newString2 = "   This   is my java code";
-		System.out.println(newString.replaceAll("\\s+", "")); // remove all white spaces
+		System.out.println(newString.replaceAll("\\s", "")); // remove all white spaces
 
 		String str = "   This   is my java code";
 		String remString = StringUtils.deleteWhitespace(str);
