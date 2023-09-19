@@ -22,7 +22,7 @@ public class FindDuplicateElements {
 		System.out.println("**********hash set**********");
 		Set<String> data = new HashSet<String>();
 		for (String e : infra) {
-			if (data.add(e) == false) {
+			if (!data.add(e)) {
 				System.out.println(e);
 			}
 		}
@@ -30,7 +30,8 @@ public class FindDuplicateElements {
 		System.out.println("**********streams**********");
 		Set<String> data2 = new HashSet<String>();
 
-		Set<String> dupSet = Arrays.asList(infra).stream().filter(e -> !data2.add(e)).collect(Collectors.toSet());
+		Set<String> dupSet = Arrays.asList(infra).stream().filter(e -> data2.add(e) == false)
+				.collect(Collectors.toSet());
 		System.out.println(dupSet);
 	}
 

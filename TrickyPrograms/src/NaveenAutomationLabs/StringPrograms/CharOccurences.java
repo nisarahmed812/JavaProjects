@@ -33,7 +33,7 @@ public class CharOccurences {
 
 		// streams
 		String str3 = "Testing Solutions";
-		long charCount = str3.chars().filter(s -> (char) s == 's' || (char) s == 'i').count();
+		long charCount = str3.chars().filter(s -> s == 't' || s == 'i').count();
 		System.out.println(charCount);
 	}
 }
