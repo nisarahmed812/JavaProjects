@@ -11,14 +11,15 @@ public class ReadDataFromTextFile {
 	public static void main(String[] args) throws IOException {
 
 		// Approach 1
-		FileReader fr = new FileReader("C:\\Users\\iamni\\git\\JavaProjects\\TrickyPrograms\\src\\SDET\\DataFile.txt");
-		BufferedReader br = new BufferedReader(fr);
+		FileReader fileReader = new FileReader("C:\\Users\\iamni\\git\\JavaProjects\\TrickyPrograms\\src\\SDET\\DataFile.txt");
+		BufferedReader reader = new BufferedReader(fileReader);
 
-		String str;
-		while ((str = br.readLine()) != null) {
-			System.out.println(str);
+		String currLine = reader.readLine().trim(); // remove before and after space from line
+		while (currLine != null) {
+			System.out.println(currLine);
+			currLine = reader.readLine();
 		}
-		br.close();
+		reader.close();
 
 		// Approach 2
 		File file = new File("C:\\Users\\iamni\\git\\JavaProjects\\TrickyPrograms\\src\\SDET\\DataFile.txt");

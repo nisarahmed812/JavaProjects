@@ -10,23 +10,23 @@ public class BinarySearch {
 
 		int key = 7;
 
-		int l = 0; // 0th position
-		int h = a.length - 1; // last position
+		int low = 0; // 0th position
+		int high = a.length - 1; // last position
 
-		while (l <= h) {
-			int m = (l + h) / 2; // mid position
-			if (key == a[m]) {
+		while (low <= high) {
+			int mid = (low + high) / 2; // mid position
+			if (key == a[mid]) {
 				System.out.println("Element Found");
 				flag = true;
 				break;
 			}
 
-			if (key > a[m]) { // key greater than mid
-				l = m + 1; // l moving right side
+			if (key > a[mid]) { // key greater than mid
+				low = mid + 1; // l moving right side
 			}
 
-			if (key < a[m]) { // key less than mid
-				h = m - 1; // l moving left side
+			if (key < a[mid]) { // key less than mid
+				high = mid - 1; // l moving left side
 			}
 		}
 		if (flag == false) {
