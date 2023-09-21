@@ -28,7 +28,7 @@ public class SortArray {
 
 		System.out.println("--------------------------------------");
 
-		Stream.of(2, 6, 1, 4, 9).sorted().forEach(s -> System.out.print(s + "\t"));
+		Stream.of(2, 6, 1, 4, 9).sorted().forEach(s -> System.out.print(s + " "));
 
 	}
 

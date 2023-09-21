@@ -8,13 +8,17 @@ import java.util.Properties;
 public class GlobalValuesDrive {
 
 	public static void main(String[] args) throws IOException {
-		Properties prop = new Properties();
-		FileInputStream fis = new FileInputStream("C:\\Users\\iamni\\eclipse-workspace\\JavaInterview\\src\\JavaMiscellaneous\\data.properties");
-		prop.load(fis);
-		System.out.println(prop.getProperty("browser"));
-		System.out.println(prop.getProperty("url"));
-		prop.setProperty("browser", "chrome");
-		System.out.println(prop.getProperty("browser"));
+
+		String systemPath = System.getProperty("user.dir"); // Get the current working directory
+		FileInputStream fis = new FileInputStream(systemPath + "\\src\\JavaMiscellaneous\\data.properties");
+
+		Properties properties = new Properties();
+		properties.load(fis);
+
+		System.out.println(properties.getProperty("browser"));
+		System.out.println(properties.getProperty("url"));
+		properties.setProperty("browser", "chrome");
+		System.out.println(properties.getProperty("browser"));
 	}
 
 }

@@ -6,7 +6,8 @@ import java.io.IOException;
 
 public class FileContentCount {
 
-	static String path = "C:\\Users\\iamni\\git\\JavaProjects\\TrickyPrograms\\src\\NaveenAutomationLabs\\StringPrograms\\FileContentCount.txt";
+	static String path = System.getProperty("user.dir")
+			+ "\\src\\NaveenAutomationLabs\\StringPrograms\\FileContentCount.txt";
 
 	public static void main(String[] args) throws IOException {
 		// count total chars, words and lines in a given file

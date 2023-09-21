@@ -6,8 +6,8 @@ public class SwapVariables {
 		// sort the array with temp variable
 		int a = 4;
 		int b = 5;
-
 		int temp;
+		
 		temp = a;
 		a = b;
 		b = temp;
