@@ -7,8 +7,8 @@ public class PrintNumberWithoutLoop {
 	public static void main(String[] args) {
 		/*
 		 * Print 1 to 100 without using any loop 
-		 * 1= Recursive function 
-		 * 2=Java Streams
+		 * 1= Recursive function/ Recursion
+		 * 2= Java Streams
 		 */
 		
 		printNum(1);

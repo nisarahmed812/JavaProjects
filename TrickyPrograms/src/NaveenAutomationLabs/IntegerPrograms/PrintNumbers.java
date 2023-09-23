@@ -9,9 +9,9 @@ public class PrintNumbers {
 		 * Print from 1 to 100 without using loop and recursion
 		 */
 
-		BitSet bs = new BitSet();
-		bs.set(1, 101);
-		System.out.println(bs);
+		BitSet bitSet = new BitSet();
+		bitSet.set(1, 101);
+		System.out.println(bitSet);
 	}
 
 }

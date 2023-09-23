@@ -32,11 +32,11 @@ public class ElementPercentage {
 		double specCharsPercentage = (specChars * 100.0) / len;
 
 		System.out.println("In the given String: " + str);
-		DecimalFormat formatter = new DecimalFormat("##.##");
-		System.out.println("upperCasePercentage --> " + formatter.format(upperCasePercentage));
-		System.out.println("lowerCasePercentage --> " + formatter.format(lowerCasePercentage));
-		System.out.println("digitsPercentage --> " + formatter.format(digitsPercentage));
-		System.out.println("specCharsPercentage --> " + formatter.format(specCharsPercentage));
+		DecimalFormat decimalFormat = new DecimalFormat("##.##");
+		System.out.println("upperCasePercentage --> " + decimalFormat.format(upperCasePercentage));
+		System.out.println("lowerCasePercentage --> " + decimalFormat.format(lowerCasePercentage));
+		System.out.println("digitsPercentage --> " + decimalFormat.format(digitsPercentage));
+		System.out.println("specCharsPercentage --> " + decimalFormat.format(specCharsPercentage));
 
 		System.out.println(
 				"Total: " + (upperCasePercentage + lowerCasePercentage + digitsPercentage + specCharsPercentage));

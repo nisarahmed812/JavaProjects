@@ -8,9 +8,10 @@ public class PrintOneToHundred {
 		 */
 
 		int one = 'A' / 'A';
-		String s = "..........";
+		String str = "..........";
+		int len = str.length() * str.length();
 
-		for (int i = one; i <= (s.length() * s.length()); i++) {
+		for (int i = one; i <= len; i++) {
 			System.out.println(i);
 		}
 

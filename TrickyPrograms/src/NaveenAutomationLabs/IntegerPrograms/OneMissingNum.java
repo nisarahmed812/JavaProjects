@@ -9,7 +9,8 @@ public class OneMissingNum {
 		int sum = 0;
 
 		// formula=n(n+1)/2
-		int expSum = 5 * ((5 + 1) / 2);
+		int n = num.length + 1; // 1 is missing so adding 1
+		int expSum = n * ((n + 1) / 2);
 
 		for (int i = 0; i < num.length; i++) {
 			sum = sum + num[i];

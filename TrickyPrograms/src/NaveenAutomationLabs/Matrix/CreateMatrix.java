@@ -6,33 +6,33 @@ import java.util.Scanner;
 public class CreateMatrix {
 
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
+		Scanner scanner = new Scanner(System.in);
 		System.out.println("Enter total rows: ");
-		int rows = sc.nextInt();
+		int rows = scanner.nextInt();
 
 		System.out.println("Enter total columns: ");
-		int cols = sc.nextInt();
+		int cols = scanner.nextInt();
 
 		// 2D Array
-		int data[][] = new int[rows][cols];
+		int matrix[][] = new int[rows][cols];
 		System.out.println("Please enter the matrix data: ");
 
 		for (int i = 0; i < rows; i++) {
 			for (int j = 0; j < cols; j++) {
-				data[i][j] = sc.nextInt();
+				matrix[i][j] = scanner.nextInt();
 			}
 		}
 
 		// print the matrix with for loop
 		for (int i = 0; i < rows; i++) {
 			for (int j = 0; j < cols; j++) {
-				System.out.print(data[i][j] + "\t");
+				System.out.print(matrix[i][j] + "\t");
 			}
 			System.out.println();
 		}
 
 		// print the matrix with forEach loop
-		for (int[] r : data) {
+		for (int[] r : matrix) {
 			for (int x : r) {
 				System.out.print(x + " ");
 			}
@@ -40,7 +40,7 @@ public class CreateMatrix {
 		}
 
 		// print the matrix with forEach loop
-		for (int[] r : data) {
+		for (int[] r : matrix) {
 			System.out.println(Arrays.toString(r));
 		}
 	}

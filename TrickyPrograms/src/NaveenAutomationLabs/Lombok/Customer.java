@@ -10,11 +10,11 @@ import lombok.ToString;
 
 @NoArgsConstructor
 @AllArgsConstructor
+@Data // for getter and setter
 @ToString
 @Getter
 @Setter
 @EqualsAndHashCode
-@Data // for getter and setter
 public class Customer {
 
 	private String name;

@@ -17,13 +17,13 @@ public class StringToInteger {
 	// use this
 	public static int convertToInt(String str) {
 		char[] ch = str.toCharArray();
-		int sum = 0;
-		int zeroAsc = (int) '0';
+		int num = 0;
+		int zeroAsc = (int) '0'; // This line calculates the ASCII value of the character '0'/zero
 		for (int i = 0; i < ch.length; i++) {
 			int asc = (int) ch[i];
-			sum = sum * 10 + (asc - zeroAsc);
+			num = num * 10 + (asc - zeroAsc);
 		}
-		return sum;
+		return num;
 	}
 
 	public static int singleValueConversion(String str) {

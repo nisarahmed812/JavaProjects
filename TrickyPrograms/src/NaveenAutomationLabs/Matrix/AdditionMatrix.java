@@ -6,12 +6,12 @@ import java.util.Scanner;
 public class AdditionMatrix {
 
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
+		Scanner scanner = new Scanner(System.in);
 		System.out.println("Enter total rows: ");
-		int rows = sc.nextInt();
+		int rows = scanner.nextInt();
 
 		System.out.println("Enter total columns: ");
-		int cols = sc.nextInt();
+		int cols = scanner.nextInt();
 
 		// 2D Array
 		int matrix1[][] = new int[rows][cols];
@@ -21,14 +21,14 @@ public class AdditionMatrix {
 		System.out.println("Please enter the matrix 1 data: ");
 		for (int i = 0; i < rows; i++) {
 			for (int j = 0; j < cols; j++) {
-				matrix1[i][j] = sc.nextInt();
+				matrix1[i][j] = scanner.nextInt();
 			}
 		}
 
 		System.out.println("Please enter the matrix 2 data: ");
 		for (int i = 0; i < rows; i++) {
 			for (int j = 0; j < cols; j++) {
-				matrix2[i][j] = sc.nextInt();
+				matrix2[i][j] = scanner.nextInt();
 			}
 		}
 

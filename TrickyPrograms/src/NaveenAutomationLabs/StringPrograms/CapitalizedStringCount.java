@@ -32,11 +32,12 @@ public class CapitalizedStringCount {
 
 		// if small word string is at the begining
 		// if there is space in front of first word or letters use trim()
+		String str2 = "  NaveenAutomationLabsYoutube";
 		int c = 0;
-		if (Character.isLowerCase(str.trim().charAt(0))) {
+		if (Character.isLowerCase(str2.trim().charAt(0))) {
 			c++;
 		}
-		long count6 = str.chars().filter(e -> Character.isUpperCase(e)).count();
+		long count6 = str2.chars().filter(e -> Character.isUpperCase(e)).count();
 		System.out.println("Number of uppercase characters: " + count6);
 	}
 

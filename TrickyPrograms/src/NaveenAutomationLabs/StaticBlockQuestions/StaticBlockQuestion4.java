@@ -8,10 +8,6 @@ public class StaticBlockQuestion4 {
 
 	int age;
 
-	static {
-		StaticBlockQuestion4 obj1 = new StaticBlockQuestion4();
-	}
-
 	public static int createObject() {
 		StaticBlockQuestion4 obj1 = new StaticBlockQuestion4();
 		obj1.age = 40;

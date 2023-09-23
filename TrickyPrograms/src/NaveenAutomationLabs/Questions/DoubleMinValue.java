@@ -14,6 +14,8 @@ public class DoubleMinValue {
 		System.out.println(Long.MIN_VALUE);
 		System.out.println(Integer.MIN_VALUE);
 
+		System.out.println("-------------------------------");
+		
 		System.out.println(Math.min(Double.MIN_VALUE, 0.0d)); // 0.0
 		System.out.println(Math.min(Float.MIN_VALUE, 0.0f)); // 0.0
 		System.out.println(Math.min(Integer.MIN_VALUE, 0));
