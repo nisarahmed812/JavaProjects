@@ -11,12 +11,12 @@ public class WriteDataInToTextFile {
 		String systemPath = System.getProperty("user.dir"); // Get the current working directory
 		FileWriter fileWriter = new FileWriter(systemPath + "\\src\\SDET\\WriteFile.txt");
 		
-		BufferedWriter writer = new BufferedWriter(fileWriter);
-		writer.write("Selenium with Java\n");
-		writer.write("Selenium with Python\n");
-		writer.write("RestAssured with Java\n");
+		BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+		bufferedWriter.write("Selenium with Java\n");
+		bufferedWriter.write("Selenium with Python\n");
+		bufferedWriter.write("RestAssured with Java\n");
 
-		writer.close();
+		bufferedWriter.close();
 
 		System.out.println("Finished Writing");
 	}

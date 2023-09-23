@@ -21,9 +21,9 @@ public class RemoveWhiteSpaces {
 		String str2 = "   This   is my java code";
 		String noWhiteSpaceString = "";
 
-		for (char c : str2.toCharArray()) {
-			if (c != ' ' && c != '\t') {
-				noWhiteSpaceString = noWhiteSpaceString + c;
+		for (char ch : str2.toCharArray()) {
+			if (ch != ' ' && ch != '\t') {
+				noWhiteSpaceString = noWhiteSpaceString + ch;
 			}
 		}
 		System.out.println(noWhiteSpaceString);
@@ -32,6 +32,7 @@ public class RemoveWhiteSpaces {
 		String str3 = "   This   is my java code";
 		String[] splitStr3 = str3.split("\\s");
 		StringBuffer sBuffer = new StringBuffer();
+		
 		for (String e : splitStr3) {
 			sBuffer.append(e);
 		}

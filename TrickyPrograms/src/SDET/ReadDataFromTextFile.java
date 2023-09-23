@@ -14,14 +14,14 @@ public class ReadDataFromTextFile {
 		String systemPath = System.getProperty("user.dir");
 		FileReader fileReader = new FileReader(systemPath + "\\src\\SDET\\DataFile.txt");
 		
-		BufferedReader reader = new BufferedReader(fileReader);
-		String currLine = reader.readLine().trim(); // remove before and after space from line
+		BufferedReader bufferedReader = new BufferedReader(fileReader);
+		String currLine = bufferedReader.readLine().trim(); // remove before and after space from line
 		
 		while (currLine != null) {
 			System.out.println(currLine);
-			currLine = reader.readLine();
+			currLine = bufferedReader.readLine();
 		}
-		reader.close();
+		bufferedReader.close();
 
 		// Approach 2
 		File file = new File(systemPath + "\\src\\SDET\\DataFile.txt");
