@@ -10,9 +10,10 @@ public class ArmstrongNumber {
 			return false;
 		}
 
-		int power = power(num);
+		int power = String.valueOf(num).length();
 		int copyNum = num;
 		int sum = 0;
+		
 		while (copyNum != 0) {
 			int lastDigit = copyNum % 10;
 			int factor = 1;
@@ -26,15 +27,6 @@ public class ArmstrongNumber {
 			return true;
 		}
 		return false;
-	}
-
-	public static int power(int num) {
-		int n = 0;
-		while (num != 0) {
-			n++;
-			num = num / 10;
-		}
-		return n;
 	}
 
 	public static void main(String[] args) {

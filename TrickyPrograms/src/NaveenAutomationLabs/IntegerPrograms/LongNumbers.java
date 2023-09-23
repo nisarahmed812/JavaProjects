@@ -13,7 +13,7 @@ public class LongNumbers {
 		System.out.println(longNumberWithoutL); // 1471228928 but originalValue is 31536000000
 		System.out.println(longNumberWithL); // 31536000000
 
-		// Max limit of 32 bit int : 2147483647
+		// Max limit of int is 32 bit : 2147483647
 		// So without L java will remove over limit digits
 	}
 
