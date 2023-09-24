@@ -13,10 +13,10 @@ public class ReadDataFromTextFile {
 		// Approach 1
 		String systemPath = System.getProperty("user.dir");
 		FileReader fileReader = new FileReader(systemPath + "\\src\\SDET\\DataFile.txt");
-		
+
 		BufferedReader bufferedReader = new BufferedReader(fileReader);
 		String currLine = bufferedReader.readLine().trim(); // remove before and after space from line
-		
+
 		while (currLine != null) {
 			System.out.println(currLine);
 			currLine = bufferedReader.readLine();
@@ -25,18 +25,18 @@ public class ReadDataFromTextFile {
 
 		// Approach 2
 		File file = new File(systemPath + "\\src\\SDET\\DataFile.txt");
-		Scanner sc = new Scanner(file);
+		Scanner scanner = new Scanner(file);
 
-		while (sc.hasNextLine()) {
-			System.out.println(sc.nextLine());
+		while (scanner.hasNextLine()) {
+			System.out.println(scanner.nextLine());
 		}
 
 		// Approach 3
 		File file2 = new File(systemPath + "\\src\\SDET\\DataFile.txt");
-		Scanner sc2 = new Scanner(file);
+		Scanner scanner2 = new Scanner(file);
 
-		sc2.useDelimiter("\\Z");
-		System.out.println(sc2.next());
+		scanner2.useDelimiter("\\Z");
+		System.out.println(scanner2.next());
 	}
 
 }

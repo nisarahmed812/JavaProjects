@@ -6,11 +6,11 @@ public class CountString {
 		// count string occurence
 
 		String name = "aaanjda";
-		char character = 'a';
+		char ch = 'a';
 		int count = 0;
 
 		for (int i = 0; i < name.length(); i++) {
-			if (name.charAt(i) == character) {
+			if (name.charAt(i) == ch) {
 				count++;
 			}
 		}

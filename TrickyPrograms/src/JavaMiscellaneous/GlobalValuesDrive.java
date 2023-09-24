@@ -10,10 +10,10 @@ public class GlobalValuesDrive {
 	public static void main(String[] args) throws IOException {
 
 		String systemPath = System.getProperty("user.dir"); // Get the current working directory
-		FileInputStream fis = new FileInputStream(systemPath + "\\src\\JavaMiscellaneous\\data.properties");
+		FileInputStream fileInputStream = new FileInputStream(systemPath + "\\src\\JavaMiscellaneous\\data.properties");
 
 		Properties properties = new Properties();
-		properties.load(fis);
+		properties.load(fileInputStream);
 
 		System.out.println(properties.getProperty("browser"));
 		System.out.println(properties.getProperty("url"));
