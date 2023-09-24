@@ -4,7 +4,7 @@ public class AlphabetPattern {
 
 	public static void main(String[] args) {
 
-		int alpha = 65; // 65=A // 97=a
+		int alpha = 65; // A=65 // a=97
 
 		for (int i = 0; i <= 5; i++) {
 			for (int j = 0; j <= i; j++) {

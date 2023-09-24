@@ -1,4 +1,4 @@
-package NaveenAutomationLabs.IntegerPrograms;
+package NaveenAutomationLabs.Questions;
 
 public class LongNumbers {
 

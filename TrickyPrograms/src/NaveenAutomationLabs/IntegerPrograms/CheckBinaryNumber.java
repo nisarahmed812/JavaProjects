@@ -20,15 +20,14 @@ public class CheckBinaryNumber {
 	private static void isBinaryNumber(int number) {
 		boolean isBinary = true;
 		int copyNumber = number;
-		
+
 		while (copyNumber != 0) {
 			int rem = copyNumber % 10; // 1011%10->1
 			if (rem > 1) {
 				isBinary = false;
 				break;
-			} else {
-				copyNumber = copyNumber / 10;
 			}
+			copyNumber = copyNumber / 10;
 		}
 		if (isBinary) {
 			System.out.println(number + " is a binary number");

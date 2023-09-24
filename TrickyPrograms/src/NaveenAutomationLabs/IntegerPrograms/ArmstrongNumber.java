@@ -2,7 +2,7 @@ package NaveenAutomationLabs.IntegerPrograms;
 
 public class ArmstrongNumber {
 
-	// check given number is Armstrong/Narcissistic number
+	// check given number is Armstrong number/ Narcissistic number
 	// pluperfect digital invariant (PPDI) number/ plus perfect number
 
 	public static boolean isArmStrongNumber(int num) {
