@@ -59,13 +59,6 @@ public class CoreJavaBrushUp1 {
 			System.out.println(s);
 		}
 		
-		System.out.println("************");
-		
-		for(int Value3: arrays2)
-		{
-			System.out.println(Value3);
-		}
-		
 		//Convert arrays into list
 		System.out.println("************");
 				

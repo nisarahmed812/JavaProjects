@@ -26,7 +26,7 @@ public class HashMapDemo {
 
 		// Iterating over the HashMap
 		Set<Map.Entry<Integer, String>> entrySet = hm.entrySet();
-		
+
 		for (Map.Entry<Integer, String> entry : entrySet) {
 			Integer key = entry.getKey();
 			String value = entry.getValue();
