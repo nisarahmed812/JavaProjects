@@ -1,4 +1,4 @@
-package NaveenAutomationLabs.HashMapConcepts;
+package MapCollections;
 
 import java.util.Collections;
 import java.util.HashMap;

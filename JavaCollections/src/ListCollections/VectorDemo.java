@@ -1,4 +1,4 @@
-package NaveenAutomationLabs.OtherCollections;
+package ListCollections;
 
 import java.util.Collections;
 import java.util.Iterator;

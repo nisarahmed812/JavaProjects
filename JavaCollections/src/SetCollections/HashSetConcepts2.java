@@ -1,4 +1,4 @@
-package NaveenAutomationLabs.SetConcepts;
+package SetCollections;
 
 import java.util.Arrays;
 import java.util.HashSet;

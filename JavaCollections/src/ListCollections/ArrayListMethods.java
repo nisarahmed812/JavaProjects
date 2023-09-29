@@ -1,4 +1,4 @@
-package NaveenAutomationLabs.ArrayList;
+package ListCollections;
 
 import java.util.ArrayList;
 

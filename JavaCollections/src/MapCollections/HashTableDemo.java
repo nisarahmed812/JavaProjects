@@ -1,4 +1,4 @@
-package NaveenAutomationLabs.OtherCollections;
+package MapCollections;
 
 import java.util.Hashtable;
 
