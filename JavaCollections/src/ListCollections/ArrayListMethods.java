@@ -29,9 +29,9 @@ public class ArrayListMethods {
 		ArrayList<String> cloneList = (ArrayList<String>) ar1.clone();
 		System.out.println(cloneList);
 
-		System.out.println(ar1.contains("python"));
-		System.out.println(ar1.indexOf("python"));
-		System.out.println(ar1.indexOf("python") > 0);
+		System.out.println(cloneList.contains("python"));
+		System.out.println(cloneList.indexOf("python"));
+		System.out.println(cloneList.indexOf("python") > 0);
 	}
 
 }

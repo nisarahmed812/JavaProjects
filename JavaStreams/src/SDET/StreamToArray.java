@@ -11,10 +11,10 @@ public class StreamToArray {
 		System.out.println(numbersList); // [1, 2, 3, 4, 5]
 		
 		Object[] arr = numbersList.stream().toArray();
-		System.out.println(arr); // [Ljava.lang.Object;@574caa3f
+		System.out.println(Arrays.toString(arr));
 
-		for (Object a : arr) {
-			System.out.println(a);
+		for (Object obj : arr) {
+			System.out.println(obj);
 		}
 	}
 

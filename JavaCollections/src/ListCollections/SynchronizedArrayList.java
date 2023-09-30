@@ -14,6 +14,7 @@ public class SynchronizedArrayList {
 		nameList.add("Java");
 		nameList.add("Python");
 		nameList.add("Ruby");
+		nameList.add("C#");
 
 		// add, remove : we don't need explicit synchronization
 		// to fetch transverse the values from the list: we have to use explicit

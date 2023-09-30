@@ -1,14 +1,12 @@
 package MapCollections;
 
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
 
-public class HashMapDemo {
+public class HMForEachLoop {
 
 	public static void main(String[] args) {
-
 		HashMap<Integer, String> hm = new HashMap<Integer, String>();
 		hm.put(0, "hello");
 		hm.put(1, "GoodBye");
@@ -24,14 +22,16 @@ public class HashMapDemo {
 		// Attempting to retrieve a removed element
 		System.out.println(hm.get(42)); // This will output 'null'
 
-		// Iterating over the HashMap
-		Set<Map.Entry<Integer, String>> entrySet = hm.entrySet();
+		// Iterating with for each loop
+		System.out.println("-------------Iterating with for each loop----------------");
+		Set<Map.Entry<Integer, String>> entryForEach = hm.entrySet();
 
-		for (Map.Entry<Integer, String> entry : entrySet) {
+		for (Map.Entry<Integer, String> entry : entryForEach) {
 			Integer key = entry.getKey();
 			String value = entry.getValue();
-			System.out.println("Key: " + key + ", Value: " + value);
+			System.out.println(key + " : " + value);
 		}
+
 	}
 
 }
