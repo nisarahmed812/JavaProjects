@@ -28,13 +28,12 @@ public class BrokenLinks2 {
 		{
 			String url = link.getAttribute("href");
 			
-			HttpURLConnection conn= (HttpURLConnection)new URL(url).openConnection();
-			conn.setRequestMethod("HEAD");
-	        conn.connect();
-	        int respCode = conn.getResponseCode();
-	        System.out.println(respCode);
+			HttpURLConnection connection = (HttpURLConnection) new URL(url).openConnection();
+			int statusCode = connection.getResponseCode();
+			System.out.println("Status Code: " + statusCode);
+			connection.disconnect();
 	        
-	        softAssert.assertTrue(respCode<400, "Broken Link = "+link.getText()+" & Status Code = " +respCode);
+	        softAssert.assertTrue(statusCode<400, "Broken Link = "+link.getText()+" & Status Code = " +statusCode);
 	        
 		}
 		softAssert.assertAll();

@@ -22,16 +22,12 @@ public class BrokenLinks {
 		// if status code >400 then that url is not working i.e link tied up to url is
 		// not working
 
-		String urlFetched = driver.findElement(By.xpath("//a[text()='SoapUI']")).getAttribute("href");
+		String url = driver.findElement(By.xpath("//a[text()='SoapUI']")).getAttribute("href");
 		System.out.println(driver.findElement(By.xpath("//a[text()='SoapUI']")).getAttribute("href"));
 
-		URL url = new URL(urlFetched);
-		HttpURLConnection connection = (HttpURLConnection) url.openConnection();
-
+		HttpURLConnection connection = (HttpURLConnection) new URL(url).openConnection();
 		int statusCode = connection.getResponseCode();
-
 		System.out.println("Status Code: " + statusCode);
-
 		connection.disconnect();
 
 		driver.quit();
