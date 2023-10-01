@@ -6,6 +6,9 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.time.Duration;
 
+import static io.restassured.RestAssured.*;
+import io.restassured.response.Response;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -24,11 +27,14 @@ public class BrokenLinks {
 		String url = driver.findElement(By.xpath("//a[text()='SoapUI']")).getAttribute("href");
 		System.out.println(driver.findElement(By.xpath("//a[text()='SoapUI']")).getAttribute("href"));
 		
-		HttpURLConnection conn= (HttpURLConnection)new URL(url).openConnection();
-		conn.setRequestMethod("HEAD");
-        conn.connect();
-        int respCode = conn.getResponseCode();
-        System.out.println(respCode);
+		// Send an HTTP GET request to the URL
+		Response response = RestAssured.get(url);
+
+		// Get and print the status code
+        int statusCode = response.getStatusCode();
+        System.out.println("Status Code: " + statusCode);
+        
+        driver.quit();
 	}
 
 }

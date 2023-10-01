@@ -20,8 +20,9 @@ public class BrokenLinks2 {
 		driver.get("https://rahulshettyacademy.com/AutomationPractice/");
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		
-		SoftAssert sa = new SoftAssert();
+		SoftAssert softAssert = new SoftAssert();
 		
+		//get all the links
 		List<WebElement> links = driver.findElements(By.cssSelector("li[class='gf-li'] a"));
 		for(WebElement link: links)
 		{
@@ -33,11 +34,12 @@ public class BrokenLinks2 {
 	        int respCode = conn.getResponseCode();
 	        System.out.println(respCode);
 	        
-	        sa.assertTrue(respCode<400, "Broken Link = "+link.getText()+" & Status Code = " +respCode);
+	        softAssert.assertTrue(respCode<400, "Broken Link = "+link.getText()+" & Status Code = " +respCode);
 	        
 		}
-		sa.assertAll();
+		softAssert.assertAll();
 		
+		driver.quit();
 	}
 
 }
