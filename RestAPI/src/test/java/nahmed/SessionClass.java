@@ -6,8 +6,8 @@ public class SessionClass {
 
 	public static void main(String[] args) {
 		
-		SessionFilter session = new SessionFilter();
-		/* Used in given().filter(session) to keep authrised from previous login to check 
+		SessionFilter sessionFilter = new SessionFilter();
+		/* Used in given().filter(sessionFilter) to keep authorized from previous login to check 
 		other APIs which required previous session */
 		
 		/* given().urlEncodingEnabled(false); 
