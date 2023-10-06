@@ -29,13 +29,13 @@ public class SelScreenshot {
 		driver.manage().deleteCookieNamed("cookie name mention here");
 
 		// get full page screenshot
-		File screenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(screenshotFile, new File("C:\\WebDrivers\\SeleniumScreenshots\\FullPageScreenshot.png"));
+		File pageScreenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		FileUtils.copyFile(pageScreenshotFile, new File("C:\\WebDrivers\\SeleniumScreenshots\\FullPageScreenshot.png"));
 
 		// get element screenshot
 		WebElement searchElement = driver.findElement(By.className("SDkEP"));
-		File fileName = searchElement.getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(fileName, new File("C:\\WebDrivers\\SeleniumScreenshots\\ElementScreenshot.png"));
+		File elementScreenshotFile = searchElement.getScreenshotAs(OutputType.FILE);
+		FileUtils.copyFile(elementScreenshotFile, new File("C:\\WebDrivers\\SeleniumScreenshots\\ElementScreenshot.png"));
 
 		driver.quit();
 	}

@@ -64,6 +64,7 @@ public class GreenKartPageDemo {
 				// click on add to cart
 				driver.findElements(By.xpath("//div[@class='product-action']/button")).get(i).click();
 
+				j++;
 				if (j == itemsNeeded.length) {
 					break;
 				}
