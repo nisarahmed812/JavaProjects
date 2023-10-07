@@ -41,10 +41,17 @@ public class IsNumber {
 	}
 
 	public static void main(String[] args) {
+		System.out.println("----------------isNumber------------------");
 		System.out.println(isNumber("123a"));
+		
+		System.out.println("----------------isValidPhoneNumber------------------");
 		System.out.println(isValidPhoneNumber("1234567899"));
 		System.out.println(isValidPhoneNumber("90909"));
+		
+		System.out.println("----------------isValidCCNumber------------------");
 		System.out.println(isValidCCNumber("90909"));
+		
+		System.out.println("----------------isCorrectPhoneNumber------------------");
 		System.out.println(isCorrectPhoneNumber("1234567899"));
 	}
 

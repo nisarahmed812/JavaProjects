@@ -11,7 +11,7 @@ public class RemoveWhiteSpaces {
 		System.out.println(newString.trim());
 
 		String newString2 = "   This   is my java code";
-		System.out.println(newString.replaceAll("\\s+", "")); // remove all white spaces
+		System.out.println(newString.replaceAll("\\s", "")); // remove all white spaces
 
 		String str = "   This   is my java code";
 		String remString = StringUtils.deleteWhitespace(str);
@@ -31,12 +31,12 @@ public class RemoveWhiteSpaces {
 		System.out.println("---------------------------");
 		String str3 = "   This   is my java code";
 		String[] splitStr3 = str3.split("\\s");
-		StringBuffer sBuffer = new StringBuffer();
-		
+		StringBuffer stringBuffer = new StringBuffer();
+
 		for (String e : splitStr3) {
-			sBuffer.append(e);
+			stringBuffer.append(e);
 		}
-		System.out.println(sBuffer);
+		System.out.println(stringBuffer);
 	}
 
 }
