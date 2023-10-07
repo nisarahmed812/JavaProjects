@@ -3,8 +3,6 @@ package MapCollections;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
-import java.util.Set;
-import java.util.Map.Entry;
 
 public class HashMapBasics {
 
@@ -41,9 +39,9 @@ public class HashMapBasics {
 
 		// iterator over the set (pair): By using entrySet()
 		System.out.println("-------------iterator over the set (pair): By using entrySet()----------------");
-		Iterator<Entry<String, String>> it2 = capitalMap.entrySet().iterator();
+		Iterator<Map.Entry<String, String>> it2 = capitalMap.entrySet().iterator();
 		while (it2.hasNext()) {
-			Entry<String, String> entry = it2.next();
+			Map.Entry<String, String> entry = it2.next();
 			System.out.println(entry.getKey() + " : " + entry.getValue());
 		}
 
