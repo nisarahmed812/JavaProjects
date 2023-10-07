@@ -15,10 +15,10 @@ public class StringToInteger {
 	}
 
 	// use this
-	public static int convertToInt(String str) {
+	public static int stringToInt(String str) {
 		char[] ch = str.toCharArray();
 		int num = 0;
-		int zeroAsc = (int) '0'; // This line calculates the ASCII value of the character '0'/zero
+		int zeroAsc = (int) '0'; // This line calculates the ASCII value of the character '0'/zero i.e 48
 		for (int i = 0; i < ch.length; i++) {
 			int asc = (int) ch[i];
 			num = num * 10 + (asc - zeroAsc);
@@ -37,7 +37,7 @@ public class StringToInteger {
 	public static void main(String[] args) {
 		String s = "123";
 		System.out.println(stringToNumber(s) + 10);
-		System.out.println(convertToInt(s) + 10);
+		System.out.println(stringToInt(s) + 10);
 
 		String singleValue = "9";
 		System.out.println(singleValueConversion(singleValue) + 10);
