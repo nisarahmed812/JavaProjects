@@ -23,11 +23,10 @@ public class CheckArraysEquals {
 			for (int i = 0; i < a.length; i++) {
 				if (a[i] != b[i]) {
 					status2 = false;
+					break;
 				}
 			}
-		} else {
-			status2 = false;
-		}
+		} 
 
 		if (status2 == true) {
 			System.out.println("Arrays are equal");

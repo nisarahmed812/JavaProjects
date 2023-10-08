@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 public class CreateMatrix {
 
+	@SuppressWarnings("resource")
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Enter total rows: ");

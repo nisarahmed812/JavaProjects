@@ -5,27 +5,27 @@ import java.util.Arrays;
 public class BinarySearch {
 
 	public static void main(String[] args) {
-		int[] a = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 }; // should be in sorted order
+		int[] arr = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 }; // should be in sorted order
 		boolean flag = false;
 
 		int key = 7;
 
 		int low = 0; // 0th position
-		int high = a.length - 1; // last position
+		int high = arr.length - 1; // last position
 
 		while (low <= high) {
 			int mid = (low + high) / 2; // mid position
-			if (key == a[mid]) {
+			if (key == arr[mid]) {
 				System.out.println("Element Found");
 				flag = true;
 				break;
 			}
 
-			if (key > a[mid]) { // key greater than mid
+			if (key > arr[mid]) { // key greater than mid
 				low = mid + 1; // l moving right side
 			}
 
-			if (key < a[mid]) { // key less than mid
+			if (key < arr[mid]) { // key less than mid
 				high = mid - 1; // l moving left side
 			}
 		}
@@ -34,7 +34,7 @@ public class BinarySearch {
 		}
 
 		// Approach2
-		System.out.println(Arrays.binarySearch(a, 100)); // it will display value at 8th position
+		System.out.println(Arrays.binarySearch(arr, 9)); // it will display value at 8th position
 	}
 
 }

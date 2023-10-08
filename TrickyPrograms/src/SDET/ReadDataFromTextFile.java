@@ -8,6 +8,7 @@ import java.util.Scanner;
 
 public class ReadDataFromTextFile {
 
+	@SuppressWarnings("resource")
 	public static void main(String[] args) throws IOException {
 
 		// Approach 1
@@ -33,7 +34,7 @@ public class ReadDataFromTextFile {
 
 		// Approach 3
 		File file2 = new File(systemPath + "\\src\\SDET\\DataFile.txt");
-		Scanner scanner2 = new Scanner(file);
+		Scanner scanner2 = new Scanner(file2);
 
 		scanner2.useDelimiter("\\Z");
 		System.out.println(scanner2.next());

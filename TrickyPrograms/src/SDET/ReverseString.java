@@ -8,11 +8,10 @@ public class ReverseString {
 		String str = "ABCD";
 		String rev = "";
 
-		char[] a = str.toCharArray();
-		int len = a.length;
+		char[] ch = str.toCharArray();
 
-		for (int i = len - 1; i >= 0; i--) {
-			rev = rev + a[i];
+		for (int i = ch.length - 1; i >= 0; i--) {
+			rev = rev + ch[i];
 		}
 		System.out.println(rev);
 
