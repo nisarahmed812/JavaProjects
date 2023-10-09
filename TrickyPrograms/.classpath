@@ -6,8 +6,8 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="D:/Nisar Ahmed/QA Testing/Java Jars/commons-lang3-3.13.0.jar"/>
-	<classpathentry kind="lib" path="D:/Nisar Ahmed/QA Testing/Java Jars/guava-32.1.2-jre.jar"/>
-	<classpathentry kind="lib" path="D:/Nisar Ahmed/QA Testing/Java Jars/lombok-1.18.28.jar"/>
+	<classpathentry exported="true" kind="lib" path="D:/Nisar Ahmed/QA Testing/Java Jars/commons-lang3-3.13.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="D:/Nisar Ahmed/QA Testing/Java Jars/guava-32.1.2-jre.jar"/>
+	<classpathentry exported="true" kind="lib" path="D:/Nisar Ahmed/QA Testing/Java Jars/lombok-1.18.28.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
