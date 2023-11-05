@@ -14,7 +14,7 @@ public class PrintNumberWithoutLoop {
 
 	}
 
-	private static void printNum(int num) {
+	public static void printNum(int num) {
 		if (num<=100) {
 			System.out.println(num);
 			num++;
@@ -23,7 +23,7 @@ public class PrintNumberWithoutLoop {
 	}
 	
 	
-	private static void printNumber(int startNum, int endNum) {
+	public static void printNumber(int startNum, int endNum) {
 		if (startNum<=endNum) {
 			System.out.println(startNum);
 			startNum++;

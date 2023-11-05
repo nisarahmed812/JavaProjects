@@ -24,6 +24,7 @@ public class NumbersFrequency {
 			}
 			number = number / 10;
 		}
+		
 		Set<Long> keys = digitMap.keySet();
 		for (Long key : keys) {
 			System.out.println(key + ":" + digitMap.get(key));

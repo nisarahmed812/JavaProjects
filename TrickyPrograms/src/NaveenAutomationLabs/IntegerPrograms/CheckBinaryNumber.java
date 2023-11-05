@@ -18,18 +18,18 @@ public class CheckBinaryNumber {
 	}
 
 	private static void isBinaryNumber(int number) {
-		boolean isBinary = true;
-		int copyNumber = number;
+		boolean status = true;
+		int copyNum = number;
 
-		while (copyNumber != 0) {
-			int rem = copyNumber % 10; // 1011%10->1
-			if (rem > 1) {
-				isBinary = false;
+		while (copyNum != 0) {
+			int lastDigit = copyNum % 10; // 1011%10->1
+			if (lastDigit > 1) {
+				status = false;
 				break;
 			}
-			copyNumber = copyNumber / 10;
+			copyNum = copyNum / 10;
 		}
-		if (isBinary) {
+		if (status) {
 			System.out.println(number + " is a binary number");
 		} else {
 			System.out.println(number + " not a binary number");

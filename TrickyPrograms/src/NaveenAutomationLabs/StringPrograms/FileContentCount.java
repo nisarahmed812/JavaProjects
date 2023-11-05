@@ -9,6 +9,7 @@ public class FileContentCount {
 	static String path = System.getProperty("user.dir")
 			+ "\\src\\NaveenAutomationLabs\\StringPrograms\\FileContentCount.txt";
 
+	@SuppressWarnings("resource")
 	public static void main(String[] args) throws IOException {
 		// count total chars, words and lines in a given file
 
