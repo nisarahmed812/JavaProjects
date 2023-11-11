@@ -17,8 +17,8 @@ public class MatchMethod {
 		System.out.println("--------------------------");
 
 		// to check boolean result
-		boolean flag = names.stream().anyMatch(s -> s.equalsIgnoreCase("Adam"));
-		System.out.println(flag);
+		boolean status = names.stream().anyMatch(s -> s.equalsIgnoreCase("Adam"));
+		System.out.println(status);
 	}
 
 }
