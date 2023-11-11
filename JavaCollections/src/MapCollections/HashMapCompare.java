@@ -69,7 +69,7 @@ public class HashMapCompare {
 		map7.put(4, "C");
 
 		// 1. duplicates are allowed: using ArrayList
-		System.out.println("---------1. duplicates are not allowed: using ArrayList-----------");
+		System.out.println("---------1. duplicates are allowed: using ArrayList-----------");
 		System.out.println(new ArrayList<>(map5.values()).equals(new ArrayList<>(map6.values())));
 		System.out.println(new ArrayList<>(map5.values()).equals(new ArrayList<>(map7.values())));
 
