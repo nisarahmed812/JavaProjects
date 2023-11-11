@@ -9,18 +9,18 @@ public class ConcatenateStream {
 
 	public static void main(String[] args) {
 		// Concatenate two lists using stream
-		List<String> animalsList = Arrays.asList("Dog", "Cat");
-		List<String> birdsList = Arrays.asList("parrot", "crow");
+		List<String> list1 = Arrays.asList("Dog", "Cat");
+		List<String> list2 = Arrays.asList("parrot", "crow");
 
-		List<String> combineList = Stream.concat(animalsList.stream(), birdsList.stream()).collect(Collectors.toList());
-		System.out.println(combineList);
+		List<String> concatenatedList = Stream.concat(list1.stream(), list2.stream()).collect(Collectors.toList());
+		System.out.println(concatenatedList);
 
 		// Concatenate two arrays using stream
 		String[] array1 = { "Hello", "World" };
 		String[] array2 = { "Java", "8" };
 
-		String[] combineArray = Stream.concat(Arrays.stream(array1), Arrays.stream(array2)).toArray(String[]::new);
-		System.out.println(Arrays.toString(combineArray));
+		String[] concatenatedArray = Stream.concat(Arrays.stream(array1), Arrays.stream(array2)).toArray(String[]::new);
+		System.out.println(Arrays.toString(concatenatedArray));
 	}
 
 }

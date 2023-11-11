@@ -15,7 +15,6 @@ public class StaticVar2 {
 	//int i = 0; //instance variable
 	//on every iteration value of i will be taken freshly
 	static int i = 0; // class variable
-	//if we remove static sharing will not be done
 	//due to static it will remember last value of i and will iterate over last value
 	
 	public StaticVar2(String name, String address)
