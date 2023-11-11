@@ -3,14 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="day7.Authentications">
+      <class name="day3.CookiesDemo">
         <methods>
-          <include name="testOAuth2Authentication"/>
-          <include name="testOAuth1Authentication"/>
-          <include name="testAPIKeyAuthentication"/>
-          <include name="testBearerTokenAuthentication"/>
+          <include name="testCookies"/>
         </methods>
-      </class> <!-- day7.Authentications -->
+      </class> <!-- day3.CookiesDemo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
