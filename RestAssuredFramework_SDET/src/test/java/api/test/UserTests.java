@@ -32,7 +32,6 @@ public class UserTests {
 		
 		//logs
 		logger= LogManager.getLogger(this.getClass());
-		logger.debug("debugging....");
 	}
 
 	@Test(priority = 1)
