@@ -1,7 +1,6 @@
 package day7;
 
 import static io.restassured.RestAssured.*;
-import static io.restassured.matcher.RestAssuredMatchers.*;
 import static org.hamcrest.Matchers.*;
 
 import org.testng.annotations.Test;
@@ -40,7 +39,7 @@ public class Authentications {
 	@Test(priority=5)
 	void testOAuth1Authentication() {
 		// oauth1.0
-		given().auth().oauth("consumerKey", "consumerSecret", "accessToken", "tokenSecrate") 
+		given().auth().oauth("consumerKey", "consumerSecret", "accessToken", "tokenSecret") 
 		.when().get("url")
 		.then().statusCode(200);
 	}
