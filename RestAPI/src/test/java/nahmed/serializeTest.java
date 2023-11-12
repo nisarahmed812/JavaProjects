@@ -3,13 +3,10 @@ package nahmed;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
 import io.restassured.RestAssured;
-import io.restassured.response.Response;
 import pojo.AddPlace;
 import pojo.Location;
 

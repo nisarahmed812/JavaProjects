@@ -7,9 +7,8 @@
 				<include name="Smoke" />
 			</run>
 		</groups>
-<packages>
-	<package name="Tests" />
-</packages>
-
-</test>
+		<packages>
+			<package name="Tests" />
+		</packages>
+	</test>
 </suite>
