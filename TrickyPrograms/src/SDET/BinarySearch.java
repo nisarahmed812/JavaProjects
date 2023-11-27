@@ -6,7 +6,7 @@ public class BinarySearch {
 
 	public static void main(String[] args) {
 		int[] arr = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 }; // should be in sorted order
-		boolean flag = false;
+		boolean status = false;
 
 		int key = 7;
 
@@ -17,7 +17,7 @@ public class BinarySearch {
 			int mid = (low + high) / 2; // mid position
 			if (key == arr[mid]) {
 				System.out.println("Element Found");
-				flag = true;
+				status = true;
 				break;
 			}
 
@@ -29,7 +29,7 @@ public class BinarySearch {
 				high = mid - 1; // l moving left side
 			}
 		}
-		if (flag == false) {
+		if (status == false) {
 			System.out.println("Element not found");
 		}
 
