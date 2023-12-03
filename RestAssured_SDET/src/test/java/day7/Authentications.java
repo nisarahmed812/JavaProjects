@@ -9,21 +9,21 @@ public class Authentications {
 
 	@Test(priority=1)
 	void testBasicAuthentication() {
-		given().auth().basic("postman", "password")
+		given().auth().basic("userName", "password")
 		.when().get("https://postman-echo.com/basic-auth")
 		.then().statusCode(200).body("authenticated", equalTo(true)).log().all();
 	}
 	
 	@Test(priority=2)
 	void testDigestAuthentication() {
-		given().auth().digest("postman", "password")
+		given().auth().digest("userName", "password")
 		.when().get("https://postman-echo.com/basic-auth")
 		.then().statusCode(200).body("authenticated", equalTo(true)).log().all();
 	}
 	
 	@Test(priority=3)
 	void testPreemptiveAuthentication() {
-		given().auth().preemptive().basic("postman", "password")
+		given().auth().preemptive().basic("username", "password")
 		.when().get("https://postman-echo.com/basic-auth")
 		.then().statusCode(200).body("authenticated", equalTo(true)).log().all();
 	}
@@ -39,15 +39,15 @@ public class Authentications {
 	@Test(priority=5)
 	void testOAuth1Authentication() {
 		// oauth1.0
-		given().auth().oauth("consumerKey", "consumerSecret", "accessToken", "tokenSecret") 
+		given().auth().oauth("consumerKey", "consumerSecret", "accessToken", "secretToken") 
 		.when().get("url")
 		.then().statusCode(200);
 	}
 	
 	@Test(priority=6)
 	void testOAuth2Authentication() {
-		// oauth1.0
-		given().auth().oauth2("blank") 
+		// oauth2.0
+		given().auth().oauth2("accessToken") 
 		.when().get("https://api.github.com/user/repos")
 		.then().statusCode(200);
 	}
