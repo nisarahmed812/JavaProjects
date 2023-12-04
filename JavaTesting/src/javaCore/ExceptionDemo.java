@@ -25,6 +25,7 @@ public class ExceptionDemo {
 		catch(IndexOutOfBoundsException ioobe)
 		{
 			System.out.println("I catched the Index Out Of Bounds Exception");
+			System.out.println(ioobe);
 		}
 		catch(Exception e)
 		{

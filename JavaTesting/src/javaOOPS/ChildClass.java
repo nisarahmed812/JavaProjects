@@ -23,7 +23,7 @@ public class ChildClass extends ParentClass{
 		ChildClass cc = new ChildClass();
 		cc.color();
 		cc.brakes();
-		cc.audioSystem(); // Function Overriding: both have same method, name, signature
+		cc.audioSystem(); // Method Overriding:: both have same method, name, signature
 	}
 
 }
