@@ -1,50 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="12" passed="5" failed="1" skipped="6">
+<testng-results ignored="0" total="7" passed="6" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-12T15:17:04 IST" name="Loan Department" finished-at="2023-11-12T15:17:04 IST" duration-ms="84">
+  <suite started-at="2023-12-04T23:16:22 IST" name="Default suite" finished-at="2023-12-04T23:16:22 IST" duration-ms="77">
     <groups>
       <group name="Smoke">
-        <method signature="day1.Demo()[pri:0, instance:Tests.day1@a3d8174]" name="Demo" class="Tests.day1"/>
-        <method signature="day2.pLoan()[pri:0, instance:Tests.day2@581ac8a8]" name="pLoan" class="Tests.day2"/>
-        <method signature="day3.WebLoginCarLoan()[pri:0, instance:Tests.day3@6d4e5011]" name="WebLoginCarLoan" class="Tests.day3"/>
-        <method signature="day4.WebLoginHomeLoan()[pri:0, instance:Tests.day4@fba92d3]" name="WebLoginHomeLoan" class="Tests.day4"/>
+        <method signature="day3.WebLoginCarLoan()[pri:0, instance:Tests.day3@3246fb96]" name="WebLoginCarLoan" class="Tests.day3"/>
       </group> <!-- Smoke -->
     </groups>
-    <test started-at="2023-11-12T15:17:04 IST" name="Personal Loan" finished-at="2023-11-12T15:17:04 IST" duration-ms="84">
-      <class name="Tests.day4">
-        <test-method signature="MobileLoginHomeLoan()[pri:0, instance:Tests.day4@fba92d3]" started-at="2023-11-12T15:17:04 IST" name="MobileLoginHomeLoan" finished-at="2023-11-12T15:17:04 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- MobileLoginHomeLoan -->
-        <test-method signature="WebLoginHomeLoan()[pri:0, instance:Tests.day4@fba92d3]" started-at="2023-11-12T15:17:04 IST" name="WebLoginHomeLoan" finished-at="2023-11-12T15:17:04 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- WebLoginHomeLoan -->
-        <test-method signature="ApiLoginHomeLoan()[pri:0, instance:Tests.day4@fba92d3]" started-at="2023-11-12T15:17:04 IST" name="ApiLoginHomeLoan" finished-at="2023-11-12T15:17:04 IST" depends-on-methods="Tests.day4.MobileLoginHomeLoan" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ApiLoginHomeLoan -->
-      </class> <!-- Tests.day4 -->
+    <test started-at="2023-12-04T23:16:22 IST" name="Default test" finished-at="2023-12-04T23:16:22 IST" duration-ms="77">
       <class name="Tests.day3">
-        <test-method is-config="true" signature="beforeClass(java.lang.String,java.lang.String)[pri:0, instance:Tests.day3@6d4e5011]" started-at="2023-11-12T15:17:04 IST" name="beforeClass" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1699782424075" status="FAIL">
+        <test-method is-config="true" signature="beforeEveryMethod()[pri:0, instance:Tests.day3@3246fb96]" started-at="2023-12-04T23:16:22 IST" name="beforeEveryMethod" finished-at="2023-12-04T23:16:22 IST" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEveryMethod -->
+        <test-method signature="ApiLoginCarLoan()[pri:0, instance:Tests.day3@3246fb96]" started-at="2023-12-04T23:16:22 IST" name="ApiLoginCarLoan" finished-at="2023-12-04T23:16:22 IST" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApiLoginCarLoan -->
+        <test-method is-config="true" signature="afterEveryMethod()[pri:0, instance:Tests.day3@3246fb96]" started-at="2023-12-04T23:16:22 IST" name="afterEveryMethod" finished-at="2023-12-04T23:16:22 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEveryMethod -->
+        <test-method signature="MobileLoginCarLoan()[pri:0, instance:Tests.day3@3246fb96]" started-at="2023-12-04T23:16:22 IST" name="MobileLoginCarLoan" finished-at="2023-12-04T23:16:22 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MobileLoginCarLoan -->
+        <test-method is-config="true" signature="beforeEveryMethod()[pri:0, instance:Tests.day3@3246fb96]" started-at="2023-12-04T23:16:22 IST" name="beforeEveryMethod" finished-at="2023-12-04T23:16:22 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEveryMethod -->
+        <test-method is-config="true" signature="afterEveryMethod()[pri:0, instance:Tests.day3@3246fb96]" started-at="2023-12-04T23:16:22 IST" name="afterEveryMethod" finished-at="2023-12-04T23:16:22 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEveryMethod -->
+        <test-method is-config="true" signature="beforeEveryMethod()[pri:0, instance:Tests.day3@3246fb96]" started-at="2023-12-04T23:16:22 IST" name="beforeEveryMethod" finished-at="2023-12-04T23:16:22 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEveryMethod -->
+        <test-method signature="WebLoginCarLoan()[pri:0, instance:Tests.day3@3246fb96]" started-at="2023-12-04T23:16:22 IST" name="WebLoginCarLoan" finished-at="2023-12-04T23:16:22 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WebLoginCarLoan -->
+        <test-method is-config="true" signature="afterEveryMethod()[pri:0, instance:Tests.day3@3246fb96]" started-at="2023-12-04T23:16:22 IST" name="afterEveryMethod" finished-at="2023-12-04T23:16:22 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEveryMethod -->
+        <test-method signature="beforeClass(java.lang.String,java.lang.String)[pri:0, instance:Tests.day3@3246fb96]" started-at="2023-12-04T23:16:22 IST" name="beforeClass" finished-at="2023-12-04T23:16:22 IST" duration-ms="0" status="FAIL">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
-Parameter 'URL' is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
-in C:\Users\iamni\git\JavaProjects\TestNGTutorial\testng2.xml]]>
+Parameter 'URL' is required by @Test on method beforeClass but has not been marked @Optional or defined
+in C:\Users\iamni\AppData\Local\Temp\testng-eclipse-1106181785\testng-customsuite.xml]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.TestNGException: 
-Parameter 'URL' is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
-in C:\Users\iamni\git\JavaProjects\TestNGTutorial\testng2.xml
+Parameter 'URL' is required by @Test on method beforeClass but has not been marked @Optional or defined
+in C:\Users\iamni\AppData\Local\Temp\testng-eclipse-1106181785\testng-customsuite.xml
 at org.testng.internal.Parameters.createParams(Parameters.java:270)
 at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
 at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:884)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:791)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 at org.testng.TestRunner.privateRun(TestRunner.java:794)
 at org.testng.TestRunner.run(TestRunner.java:596)
@@ -67,155 +90,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeEveryMethod()[pri:0, instance:Tests.day3@6d4e5011]" started-at="2023-11-12T15:17:04 IST" name="beforeEveryMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1699782424079" status="SKIP">
+        <test-method is-config="true" signature="beforeEveryMethod()[pri:0, instance:Tests.day3@3246fb96]" started-at="2023-12-04T23:16:22 IST" name="beforeEveryMethod" finished-at="2023-12-04T23:16:22 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeEveryMethod -->
-        <test-method signature="ApiLoginCarLoan()[pri:0, instance:Tests.day3@6d4e5011]" started-at="2023-11-12T15:17:04 IST" name="ApiLoginCarLoan" finished-at="2023-11-12T15:17:04 IST" duration-ms="0" status="SKIP">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'URL' is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
-in C:\Users\iamni\git\JavaProjects\TestNGTutorial\testng2.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'URL' is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
-in C:\Users\iamni\git\JavaProjects\TestNGTutorial\testng2.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:270)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
-at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ApiLoginCarLoan -->
-        <test-method is-config="true" signature="afterEveryMethod()[pri:0, instance:Tests.day3@6d4e5011]" started-at="2023-11-12T15:17:04 IST" name="afterEveryMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1699782424083" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterEveryMethod -->
-        <test-method is-config="true" signature="beforeEveryMethod()[pri:0, instance:Tests.day3@6d4e5011]" started-at="2023-11-12T15:17:04 IST" name="beforeEveryMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1699782424084" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeEveryMethod -->
-        <test-method signature="MobileLoginCarLoan()[pri:0, instance:Tests.day3@6d4e5011]" started-at="2023-11-12T15:17:04 IST" name="MobileLoginCarLoan" finished-at="2023-11-12T15:17:04 IST" duration-ms="0" status="SKIP">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'URL' is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
-in C:\Users\iamni\git\JavaProjects\TestNGTutorial\testng2.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'URL' is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
-in C:\Users\iamni\git\JavaProjects\TestNGTutorial\testng2.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:270)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
-at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- MobileLoginCarLoan -->
-        <test-method is-config="true" signature="afterEveryMethod()[pri:0, instance:Tests.day3@6d4e5011]" started-at="2023-11-12T15:17:04 IST" name="afterEveryMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1699782424087" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterEveryMethod -->
-        <test-method is-config="true" signature="beforeEveryMethod()[pri:0, instance:Tests.day3@6d4e5011]" started-at="2023-11-12T15:17:04 IST" name="beforeEveryMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1699782424089" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeEveryMethod -->
-        <test-method signature="WebLoginCarLoan()[pri:0, instance:Tests.day3@6d4e5011]" started-at="2023-11-12T15:17:04 IST" name="WebLoginCarLoan" finished-at="2023-11-12T15:17:04 IST" duration-ms="0" status="SKIP">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'URL' is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
-in C:\Users\iamni\git\JavaProjects\TestNGTutorial\testng2.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'URL' is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
-in C:\Users\iamni\git\JavaProjects\TestNGTutorial\testng2.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:270)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
-at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- WebLoginCarLoan -->
-        <test-method is-config="true" signature="afterEveryMethod()[pri:0, instance:Tests.day3@6d4e5011]" started-at="2023-11-12T15:17:04 IST" name="afterEveryMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1699782424091" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterEveryMethod -->
-        <test-method is-config="true" signature="beforeEveryMethod()[pri:0, instance:Tests.day3@6d4e5011]" started-at="2023-11-12T15:17:04 IST" name="beforeEveryMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1699782424096" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeEveryMethod -->
-        <test-method signature="usingDataProvider(java.lang.String,java.lang.String)[pri:0, instance:Tests.day3@6d4e5011]" started-at="2023-11-12T15:17:04 IST" name="usingDataProvider" data-provider="getData" finished-at="2023-11-12T15:17:04 IST" duration-ms="0" status="SKIP">
+        <test-method signature="usingDataProvider(java.lang.String,java.lang.String)[pri:0, instance:Tests.day3@3246fb96]" started-at="2023-12-04T23:16:22 IST" name="usingDataProvider" data-provider="getData" finished-at="2023-12-04T23:16:22 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -228,54 +107,18 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
               </value>
             </param>
           </params>
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'URL' is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
-in C:\Users\iamni\git\JavaProjects\TestNGTutorial\testng2.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'URL' is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
-in C:\Users\iamni\git\JavaProjects\TestNGTutorial\testng2.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:270)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
-at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- usingDataProvider -->
-        <test-method is-config="true" signature="afterEveryMethod()[pri:0, instance:Tests.day3@6d4e5011]" started-at="2023-11-12T15:17:04 IST" name="afterEveryMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1699782424103" status="SKIP">
+        <test-method is-config="true" signature="afterEveryMethod()[pri:0, instance:Tests.day3@3246fb96]" started-at="2023-12-04T23:16:22 IST" name="afterEveryMethod" finished-at="2023-12-04T23:16:22 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterEveryMethod -->
-        <test-method is-config="true" signature="beforeEveryMethod()[pri:0, instance:Tests.day3@6d4e5011]" started-at="2023-11-12T15:17:04 IST" name="beforeEveryMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1699782424103" status="SKIP">
+        <test-method is-config="true" signature="beforeEveryMethod()[pri:0, instance:Tests.day3@3246fb96]" started-at="2023-12-04T23:16:22 IST" name="beforeEveryMethod" finished-at="2023-12-04T23:16:22 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeEveryMethod -->
-        <test-method signature="usingDataProvider(java.lang.String,java.lang.String)[pri:0, instance:Tests.day3@6d4e5011]" started-at="2023-11-12T15:17:04 IST" name="usingDataProvider" data-provider="getData" finished-at="2023-11-12T15:17:04 IST" duration-ms="0" status="SKIP">
+        <test-method signature="usingDataProvider(java.lang.String,java.lang.String)[pri:0, instance:Tests.day3@3246fb96]" started-at="2023-12-04T23:16:22 IST" name="usingDataProvider" data-provider="getData" finished-at="2023-12-04T23:16:22 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -288,54 +131,14 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
               </value>
             </param>
           </params>
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'URL' is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
-in C:\Users\iamni\git\JavaProjects\TestNGTutorial\testng2.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'URL' is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
-in C:\Users\iamni\git\JavaProjects\TestNGTutorial\testng2.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:270)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
-at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- usingDataProvider -->
-        <test-method is-config="true" signature="afterEveryMethod()[pri:0, instance:Tests.day3@6d4e5011]" started-at="2023-11-12T15:17:04 IST" name="afterEveryMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1699782424106" status="SKIP">
+        <test-method is-config="true" signature="afterEveryMethod()[pri:0, instance:Tests.day3@3246fb96]" started-at="2023-12-04T23:16:22 IST" name="afterEveryMethod" finished-at="2023-12-04T23:16:22 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterEveryMethod -->
-        <test-method is-config="true" signature="beforeEveryMethod()[pri:0, instance:Tests.day3@6d4e5011]" started-at="2023-11-12T15:17:04 IST" name="beforeEveryMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1699782424107" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeEveryMethod -->
-        <test-method signature="usingDataProvider(java.lang.String,java.lang.String)[pri:0, instance:Tests.day3@6d4e5011]" started-at="2023-11-12T15:17:04 IST" name="usingDataProvider" data-provider="getData" finished-at="2023-11-12T15:17:04 IST" duration-ms="0" status="SKIP">
+        <test-method signature="usingDataProvider(java.lang.String,java.lang.String)[pri:0, instance:Tests.day3@3246fb96]" started-at="2023-12-04T23:16:22 IST" name="usingDataProvider" data-provider="getData" finished-at="2023-12-04T23:16:22 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -348,124 +151,18 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
               </value>
             </param>
           </params>
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'URL' is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
-in C:\Users\iamni\git\JavaProjects\TestNGTutorial\testng2.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'URL' is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
-in C:\Users\iamni\git\JavaProjects\TestNGTutorial\testng2.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:270)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
-at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- usingDataProvider -->
-        <test-method is-config="true" signature="afterEveryMethod()[pri:0, instance:Tests.day3@6d4e5011]" started-at="2023-11-12T15:17:04 IST" name="afterEveryMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1699782424109" status="SKIP">
+        <test-method is-config="true" signature="beforeEveryMethod()[pri:0, instance:Tests.day3@3246fb96]" started-at="2023-12-04T23:16:22 IST" name="beforeEveryMethod" finished-at="2023-12-04T23:16:22 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEveryMethod -->
+        <test-method is-config="true" signature="afterEveryMethod()[pri:0, instance:Tests.day3@3246fb96]" started-at="2023-12-04T23:16:22 IST" name="afterEveryMethod" finished-at="2023-12-04T23:16:22 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterEveryMethod -->
       </class> <!-- Tests.day3 -->
-      <class name="Tests.day2">
-        <test-method is-config="true" signature="FirstSuite()[pri:0, instance:Tests.day2@581ac8a8]" started-at="2023-11-12T15:17:04 IST" name="FirstSuite" finished-at="2023-11-12T15:17:04 IST" duration-ms="7" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- FirstSuite -->
-        <test-method is-config="true" signature="preRequisite()[pri:0, instance:Tests.day2@581ac8a8]" started-at="2023-11-12T15:17:04 IST" name="preRequisite" finished-at="2023-11-12T15:17:04 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- preRequisite -->
-        <test-method signature="pLoan()[pri:0, instance:Tests.day2@581ac8a8]" started-at="2023-11-12T15:17:04 IST" name="pLoan" finished-at="2023-11-12T15:17:04 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- pLoan -->
-        <test-method is-config="true" signature="lastExecution()[pri:0, instance:Tests.day2@581ac8a8]" started-at="2023-11-12T15:17:04 IST" name="lastExecution" finished-at="2023-11-12T15:17:04 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- lastExecution -->
-        <test-method is-config="true" signature="LastSuite()[pri:0, instance:Tests.day2@581ac8a8]" started-at="2023-11-12T15:17:04 IST" name="LastSuite" finished-at="2023-11-12T15:17:04 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LastSuite -->
-      </class> <!-- Tests.day2 -->
-      <class name="Tests.day1">
-        <test-method signature="Demo()[pri:0, instance:Tests.day1@a3d8174]" started-at="2023-11-12T15:17:04 IST" name="Demo" finished-at="2023-11-12T15:17:04 IST" duration-ms="6" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertTrue(Assert.java:45)
-at org.testng.Assert.assertTrue(Assert.java:55)
-at Tests.day1.Demo(day1.java:11)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Demo -->
-        <test-method signature="SecondTest()[pri:0, instance:Tests.day1@a3d8174]" started-at="2023-11-12T15:17:04 IST" name="SecondTest" finished-at="2023-11-12T15:17:04 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SecondTest -->
-      </class> <!-- Tests.day1 -->
-    </test> <!-- Personal Loan -->
-  </suite> <!-- Loan Department -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

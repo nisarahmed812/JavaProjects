@@ -12,6 +12,11 @@ public class day2 {
 	public void pLoan() {
 		System.out.println("@Test");
 	}
+	
+	@Test(groups = { "Smoke" })
+	public void pLoan2() {
+		System.out.println("@Test2");
+	}
 
 	@BeforeTest
 	public void preRequisite() {
@@ -21,6 +26,11 @@ public class day2 {
 	@AfterTest
 	public void lastExecution() {
 		System.out.println("@AfterTest");
+	}
+	
+	@Test(groups = { "Smoke" })
+	public void pLoan3() {
+		System.out.println("@Test3");
 	}
 
 	@AfterSuite

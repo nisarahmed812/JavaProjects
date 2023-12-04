@@ -5,13 +5,9 @@
     <classes>
       <class name="Tests.day3">
         <methods>
-          <include name="ApiLoginCarLoan"/>
           <include name="beforeClass"/>
           <include name="beforeEveryMethod"/>
-          <include name="MobileLoginCarLoan"/>
-          <include name="usingDataProvider"/>
           <include name="afterEveryMethod"/>
-          <include name="WebLoginCarLoan"/>
         </methods>
       </class> <!-- Tests.day3 -->
     </classes>
