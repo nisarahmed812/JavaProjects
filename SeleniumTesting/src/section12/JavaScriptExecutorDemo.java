@@ -19,11 +19,11 @@ public class JavaScriptExecutorDemo {
 
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0,500)");
-		// Thread.sleep(3000);
+		Thread.sleep(3000);
 
 		// scroll on selected table "Web Table Fixed header"
 		js.executeScript("document.querySelector('.tableFixHead').scrollTop=5000");
-		// Thread.sleep(3000);
+		Thread.sleep(3000);
 
 		List<WebElement> amountValues = driver.findElements(By.cssSelector(".tableFixHead td:nth-child(4)"));
 
@@ -39,6 +39,7 @@ public class JavaScriptExecutorDemo {
 		String splittedTotalAmount = totalAmount.split(":")[1].trim();
 		System.out.println(splittedTotalAmount);
 		int total = Integer.parseInt(splittedTotalAmount);
+		System.out.println(total);
 
 		driver.quit();
 	}
