@@ -1,6 +1,5 @@
 package nahmed.pageObjects;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -8,47 +7,44 @@ import org.openqa.selenium.support.PageFactory;
 
 import nahmed.AbstractComponents.AbstractComponent;
 
-public class LandingPage extends AbstractComponent{
-	
+public class LandingPage extends AbstractComponent {
+
 	WebDriver driver;
-	
-	public LandingPage(WebDriver driver)
-	{
+
+	public LandingPage(WebDriver driver) {
 		super(driver);
-		//initialization
+		// initialization
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
-	
-	//pageFactory
-	@FindBy(id="userEmail")
+
+	// pageFactory
+	@FindBy(id = "userEmail")
 	WebElement userEmail;
-	
-	@FindBy(id="userPassword")
+
+	@FindBy(id = "userPassword")
 	WebElement userPassword;
-	
-	@FindBy(name="login")
+
+	@FindBy(name = "login")
 	WebElement submit;
-	
-	@FindBy(xpath="//div[@aria-label='Incorrect email or password.']")
+
+	@FindBy(xpath = "//div[@aria-label='Incorrect email or password.']")
 	WebElement errorMessage;
-	
-	public void goTo()
-	{
+
+	public void goTo() {
 		driver.get("https://rahulshettyacademy.com/client");
 	}
-	
+
 	public String getErrorMessage() {
 		waitForWebElementToAppear(errorMessage);
 		return errorMessage.getText();
 	}
-	
-	public ProductCatalogue loginApplication(String email, String password)
-	{
+
+	public ProductCatalogue loginApplication(String email, String password) {
 		userEmail.sendKeys(email);
 		userPassword.sendKeys(password);
 		submit.click();
-		
+
 		ProductCatalogue productCatalogue = new ProductCatalogue(driver);
 		return productCatalogue;
 	}

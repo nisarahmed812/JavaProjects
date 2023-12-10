@@ -82,7 +82,7 @@ public class StandAloneTest {
 
 		// click on place order
 		driver.findElement(By.cssSelector("action__submit")).click();
-		
+
 		// printout confirmation message
 		System.out.println(driver.findElement(By.cssSelector(".hero-primary")).getText());
 		String confirmMessage = driver.findElement(By.cssSelector(".hero-primary")).getText();

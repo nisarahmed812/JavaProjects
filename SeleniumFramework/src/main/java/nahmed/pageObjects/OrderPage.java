@@ -9,13 +9,12 @@ import org.openqa.selenium.support.PageFactory;
 
 import nahmed.AbstractComponents.AbstractComponent;
 
-public class OrderPage extends AbstractComponent{
+public class OrderPage extends AbstractComponent {
 	WebDriver driver;
 
-	public OrderPage(WebDriver driver)
-	{
+	public OrderPage(WebDriver driver) {
 		super(driver);
-		//initialization
+		// initialization
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
@@ -24,7 +23,6 @@ public class OrderPage extends AbstractComponent{
 	// get product names added in cart
 	@FindBy(css = "tr td:nth-child(3)")
 	private List<WebElement> productNames;
-
 
 	// verify product names added in cart
 	public boolean verifyOrderDisplay(String productName) {
