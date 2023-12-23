@@ -8,7 +8,7 @@ public class LeaderElements {
 		if (num.length == 0) {
 			return;
 		}
-		
+
 		int max = num[num.length - 1];
 		System.out.print(max + " ");
 

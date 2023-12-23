@@ -16,7 +16,7 @@ public class PrintOneToHundred {
 		}
 
 		System.out.println("--------------------------");
-		
+
 		/*
 		 * a = 97; b = 98; c = 99; d = 100;
 		 */

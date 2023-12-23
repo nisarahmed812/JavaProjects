@@ -13,10 +13,9 @@ public class PrintNumbers {
 		BitSet bitSet = new BitSet();
 		bitSet.set(1, 101);
 		System.out.println(bitSet);
-		
 
-		//Using Stream
-		IntStream.range(1, 101).forEach(s->System.out.println(s));
+		// Using Stream
+		IntStream.range(1, 101).forEach(s -> System.out.println(s));
 	}
 
 }

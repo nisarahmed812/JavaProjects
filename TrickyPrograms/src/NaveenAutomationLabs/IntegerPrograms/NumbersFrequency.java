@@ -13,7 +13,7 @@ public class NumbersFrequency {
 		if (String.valueOf(number).length() == 1) {
 			System.out.println(number + ":" + 1);
 		}
-		
+
 		HashMap<Long, Integer> digitMap = new HashMap<Long, Integer>();
 		while (number != 0) {
 			long lastDigit = number % 10;
@@ -24,7 +24,7 @@ public class NumbersFrequency {
 			}
 			number = number / 10;
 		}
-		
+
 		Set<Long> keys = digitMap.keySet();
 		for (Long key : keys) {
 			System.out.println(key + ":" + digitMap.get(key));

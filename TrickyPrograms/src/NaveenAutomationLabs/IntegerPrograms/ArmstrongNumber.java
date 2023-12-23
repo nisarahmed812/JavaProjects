@@ -13,7 +13,7 @@ public class ArmstrongNumber {
 		int power = String.valueOf(num).length();
 		int copyNum = num;
 		int sum = 0;
-		
+
 		while (copyNum != 0) {
 			int lastDigit = copyNum % 10;
 			int factor = 1;
