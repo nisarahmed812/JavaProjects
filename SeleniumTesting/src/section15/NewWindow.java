@@ -38,10 +38,6 @@ public class NewWindow {
 		WebElement name = driver.findElement(By.name("name")); // Name Field
 		name.sendKeys(courseName);
 
-		// get height and width
-		System.out.println(name.getRect().getDimension().getHeight());
-		System.out.println(name.getRect().getDimension().getWidth());
-
 		driver.quit();
 	}
 
