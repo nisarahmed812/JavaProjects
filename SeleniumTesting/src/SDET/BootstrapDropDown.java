@@ -3,6 +3,7 @@ package SDET;
 import java.time.Duration;
 import java.util.List;
 
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -31,7 +32,7 @@ public class BootstrapDropDown {
 		// Product
 		driver.findElement(By.linkText("Select Product")).click();
 		List<WebElement> products = driver.findElements(By.xpath("//ul[@class='dropdown2 dropdown-menu']/li"));
-		System.out.println(productTypes.size());
+		System.out.println(products.size());
 
 		for (WebElement product : products) {
 			if (product.getText().equals("Savings Accounts")) {
