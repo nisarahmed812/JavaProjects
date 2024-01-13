@@ -2,7 +2,7 @@ package Main_Classes;
 
 import POJO_Classes.ColorInfo;
 
-public class Color_Instance {
+public class ColorInfo_Instance {
 
 	public static void main(String[] args) {
 		// Create an instance of ColorInfo and set values
