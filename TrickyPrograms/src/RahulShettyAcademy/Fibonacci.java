@@ -8,8 +8,13 @@ public class Fibonacci {
 		int b = 1;
 		int sum = 0;
 
-		for (int i = 0; i < 8; i++) { //looping 8 times
+		int num = 200; // Fibonacci series till this number
+
+		for (int i = 0; i <= num; i++) {
 			sum = a + b;
+			if (sum > num) {
+				break;
+			}
 			System.out.println(sum);
 			a = b;
 			b = sum;
