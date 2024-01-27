@@ -2,7 +2,6 @@ package ProgrammingChallenge_Part2;
 
 public class ReverseArray {
     public static void main(String[] args) {
-
         int[] numArr = {1, 2, 3, 4, 5};
 
         reverse(numArr);
