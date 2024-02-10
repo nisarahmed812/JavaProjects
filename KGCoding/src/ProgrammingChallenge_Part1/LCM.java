@@ -2,7 +2,7 @@ package ProgrammingChallenge_Part1;
 
 public class LCM {
 // Least Common Multiple
-	
+
 	public static void main(String[] args) {
 		int first = 2;
 		int second = 4;
@@ -11,13 +11,10 @@ public class LCM {
 	}
 
 	public static int lcm(int first, int second) {
-		int i = 1;
-		while (true) {
-			int factor = first * i;
-			if (factor % second == 0) {
-				return factor;
+		for (int i = 1;; i++) {
+			if (i % first == 0 && i % second == 0) {
+				return i;
 			}
-			i++;
 		}
 	}
 
