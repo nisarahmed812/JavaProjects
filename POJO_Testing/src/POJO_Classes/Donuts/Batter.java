@@ -5,8 +5,6 @@ public class Batter {
 	private String id;
 	private String type;
 
-	// Getter and Setter methods
-
 	public String getId() {
 		return id;
 	}

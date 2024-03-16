@@ -3,10 +3,8 @@ package POJO_Classes.Donuts;
 import java.util.List;
 
 public class Batters {
-	
-	private List<Batter> batter;
 
-	// Getter and Setter methods
+	private List<Batter> batter;
 
 	public List<Batter> getBatter() {
 		return batter;

@@ -5,7 +5,6 @@ public class ColorsBundle {
 	private String color;
     private String value;
 
-    // Getter and Setter methods
     public String getColor() {
         return color;
     }

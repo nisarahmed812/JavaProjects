@@ -6,12 +6,12 @@ import java.util.List;
 import POJO_Classes.Donuts.Batter;
 import POJO_Classes.Donuts.Batters;
 import POJO_Classes.Donuts.Donuts;
+import POJO_Classes.Donuts.DonutsList;
 import POJO_Classes.Donuts.Topping;
 
 public class Donuts_Instance {
 
 	public static void main(String[] args) {
-		
 		// Create Batter instances and set values
 		Batter regularBatter = new Batter();
 		regularBatter.setId("1001");
@@ -42,18 +42,35 @@ public class Donuts_Instance {
 		toppingList.add(noneTopping);
 		toppingList.add(glazedTopping);
 
-		// Create a Donut instance and set values
-		Donuts donuts = new Donuts();
-		donuts.setId("0001");
-		donuts.setType("donut");
-		donuts.setName("Cake");
-		donuts.setPpu(0.55);
-		donuts.setBatters(batters);
-		donuts.setTopping(toppingList);
+		// Create Donut instances and set values
+		Donuts donut1 = new Donuts();
+		donut1.setId("0001");
+		donut1.setType("donut");
+		donut1.setName("Cake");
+		donut1.setPpu(0.55);
+		donut1.setBatters(batters);
+		donut1.setTopping(toppingList);
+
+		Donuts donut2 = new Donuts();
+		donut2.setId("0002");
+		donut2.setType("donut");
+		donut2.setName("Chocolate Cake");
+		donut2.setPpu(0.65);
+		donut2.setBatters(batters);
+		donut2.setTopping(toppingList);
+
+		// Create DonutList instance and set the list of donuts
+		DonutsList donutList = new DonutsList();
+		List<Donuts> donuts = new ArrayList<>();
+		donuts.add(donut1);
+		donuts.add(donut2);
+		donutList.setDonuts(donuts);
 
 		// Access and print values for demonstration
-		System.out.println("Donut Name: " + donuts.getName());
-		System.out.println("Batter Type 1: " + donuts.getBatters().getBatter().get(0).getType());
-		System.out.println("Topping Type 1: " + donuts.getTopping().get(0).getType());
+		for (Donuts donut : donutList.getDonuts()) {
+			System.out.println("Donut Name: " + donut.getName());
+			System.out.println("Batter Type 1: " + donut.getBatters().getBatter().get(0).getType());
+			System.out.println("Topping Type 1: " + donut.getTopping().get(0).getType());
+		}
 	}
 }

@@ -6,7 +6,6 @@ public class ColorsBundleList {
 	
 	private List<ColorsBundle> colorsBundleList;
 
-    // Getter and Setter methods
     public List<ColorsBundle> getColorsBundleList() {
         return colorsBundleList;
     }

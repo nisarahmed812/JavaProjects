@@ -3,7 +3,7 @@ package ProgrammingChallenge_Part1;
 public class CompoundInterest {
 
 	public static void main(String[] args) {
-		int principle = 2;
+		int principle = 2000;
 		float rate = 4;
 		float years = 3;
 
