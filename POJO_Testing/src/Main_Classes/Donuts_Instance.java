@@ -3,15 +3,17 @@ package Main_Classes;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
 import POJO_Classes.Donuts.Batter;
-import POJO_Classes.Donuts.Batters;
+import POJO_Classes.Donuts.Koopmans;
 import POJO_Classes.Donuts.Donuts;
-import POJO_Classes.Donuts.DonutsList;
 import POJO_Classes.Donuts.Topping;
 
 public class Donuts_Instance {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws JsonProcessingException {
 		// Create Batter instances and set values
 		Batter regularBatter = new Batter();
 		regularBatter.setId("1001");
@@ -22,11 +24,12 @@ public class Donuts_Instance {
 		chocolateBatter.setType("Chocolate");
 
 		// Create Batters instance and set the list of batters
-		Batters batters = new Batters();
 		List<Batter> batterList = new ArrayList<>();
 		batterList.add(regularBatter);
 		batterList.add(chocolateBatter);
-		batters.setBatter(batterList);
+
+		Koopmans koopmans = new Koopmans();
+		koopmans.setBatter(batterList);
 
 		// Create Topping instances and set values
 		Topping noneTopping = new Topping();
@@ -48,7 +51,7 @@ public class Donuts_Instance {
 		donut1.setType("donut");
 		donut1.setName("Cake");
 		donut1.setPpu(0.55);
-		donut1.setBatters(batters);
+		donut1.setKoopmans(koopmans);
 		donut1.setTopping(toppingList);
 
 		Donuts donut2 = new Donuts();
@@ -56,21 +59,17 @@ public class Donuts_Instance {
 		donut2.setType("donut");
 		donut2.setName("Chocolate Cake");
 		donut2.setPpu(0.65);
-		donut2.setBatters(batters);
+		donut2.setKoopmans(koopmans);
 		donut2.setTopping(toppingList);
 
 		// Create DonutList instance and set the list of donuts
-		DonutsList donutList = new DonutsList();
-		List<Donuts> donuts = new ArrayList<>();
-		donuts.add(donut1);
-		donuts.add(donut2);
-		donutList.setDonuts(donuts);
+		List<Donuts> donutsList = new ArrayList<>();
+		donutsList.add(donut1);
+		donutsList.add(donut2);
 
-		// Access and print values for demonstration
-		for (Donuts donut : donutList.getDonuts()) {
-			System.out.println("Donut Name: " + donut.getName());
-			System.out.println("Batter Type 1: " + donut.getBatters().getBatter().get(0).getType());
-			System.out.println("Topping Type 1: " + donut.getTopping().get(0).getType());
-		}
+		// Print serialized JSON data for demonstration
+		ObjectMapper mapper = new ObjectMapper();
+		String serializedData = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(donutsList);
+		System.out.println("Serialized Data: \n" + serializedData);
 	}
 }

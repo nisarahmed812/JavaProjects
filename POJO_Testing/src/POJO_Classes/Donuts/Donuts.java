@@ -8,7 +8,7 @@ public class Donuts {
 	private String type;
 	private String name;
 	private double ppu;
-	private Batters batters;
+	private Koopmans koopmans;
 	private List<Topping> topping;
 
 	public String getId() {
@@ -43,12 +43,12 @@ public class Donuts {
 		this.ppu = ppu;
 	}
 
-	public Batters getBatters() {
-		return batters;
+	public Koopmans getkoopmans() {
+		return koopmans;
 	}
 
-	public void setBatters(Batters batters) {
-		this.batters = batters;
+	public void setKoopmans(Koopmans koopmans) {
+		this.koopmans = koopmans;
 	}
 
 	public List<Topping> getTopping() {

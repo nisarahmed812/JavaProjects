@@ -3,40 +3,36 @@ package Main_Classes;
 import java.util.ArrayList;
 import java.util.List;
 
-import POJO_Classes.ColorsBundle.ColorsBundle;
-import POJO_Classes.ColorsBundle.ColorsBundleList;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+import POJO_Classes.ColorsBundle;
 
 public class ColorsBundle_Instance {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws JsonProcessingException {
 		// Create ColorInfo instances
-		ColorsBundle red = new ColorsBundle();
-		red.setColor("red");
-		red.setValue("#f00");
+		ColorsBundle redBundle = new ColorsBundle();
+		redBundle.setColor("red");
+		redBundle.setValue("#f00");
 
-		ColorsBundle green = new ColorsBundle();
-		green.setColor("green");
-		green.setValue("#0f0");
+		ColorsBundle greenBundle = new ColorsBundle();
+		greenBundle.setColor("green");
+		greenBundle.setValue("#0f0");
 
-		ColorsBundle blue = new ColorsBundle();
-		blue.setColor("blue");
-		blue.setValue("#00f");
+		ColorsBundle blueBundle = new ColorsBundle();
+		blueBundle.setColor("blue");
+		blueBundle.setValue("#00f");
 
 		// Create a list of ColorInfo instances
-		List<ColorsBundle> colorList = new ArrayList<>();
-		colorList.add(red);
-		colorList.add(green);
-		colorList.add(blue);
+		List<ColorsBundle> colorsBundleList = new ArrayList<>();
+		colorsBundleList.add(redBundle);
+		colorsBundleList.add(greenBundle);
+		colorsBundleList.add(blueBundle);
 
-		// Create a ColorList instance and set the colorList
-		ColorsBundleList colorListWrapper = new ColorsBundleList();
-		colorListWrapper.setColorList(colorList);
-
-		// Access and print values for demonstration
-		List<ColorsBundle> retrievedColorList = colorListWrapper.getColorsBundleList();
-		for (ColorsBundle colorInfo : retrievedColorList) {
-			System.out.println("Color: " + colorInfo.getColor());
-			System.out.println("Value: " + colorInfo.getValue());
-		}
+		// Print serialized JSON data for demonstration
+		ObjectMapper mapper = new ObjectMapper();
+		String serializedData = mapper.writeValueAsString(colorsBundleList);
+		System.out.println("Serialized Data: \n" + serializedData);
 	}
 }

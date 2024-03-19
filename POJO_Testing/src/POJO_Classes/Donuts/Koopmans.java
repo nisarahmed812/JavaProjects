@@ -2,7 +2,7 @@ package POJO_Classes.Donuts;
 
 import java.util.List;
 
-public class Batters {
+public class Koopmans {
 
 	private List<Batter> batter;
 

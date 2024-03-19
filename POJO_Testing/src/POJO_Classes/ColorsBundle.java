@@ -1,4 +1,4 @@
-package POJO_Classes.ColorsBundle;
+package POJO_Classes;
 
 public class ColorsBundle {
 	
