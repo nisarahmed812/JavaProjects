@@ -8,7 +8,7 @@ public class FilterMethod1 {
 	// terminal operation will execute only if intermediate operation (filter)
 	// returns true
 	// we can create stream with stream package
-	
+
 	public static void main(String[] args) {
 		ArrayList<String> names = new ArrayList<String>();
 		names.add("Abhijeet");

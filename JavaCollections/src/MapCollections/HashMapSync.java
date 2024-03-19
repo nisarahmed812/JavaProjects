@@ -17,8 +17,8 @@ public class HashMapSync {
 		// create synchronizedMap:
 		Map<Integer, String> syncMap = Collections.synchronizedMap(map1);
 		System.out.println(syncMap);
-		
-		//concurrentHashMap: It does not throw any ConcurrentModificationException
+
+		// concurrentHashMap: It does not throw any ConcurrentModificationException
 		ConcurrentHashMap<String, String> concurrentMap = new ConcurrentHashMap<String, String>();
 		concurrentMap.put("A", "Java");
 		concurrentMap.put("B", "Python");

@@ -29,10 +29,8 @@ public class HashMapInitialization {
 		System.out.println(map3.get("test"));
 
 		// 4. stream
-		Map<String, String> map4 = Stream.of(new String[][] { 
-			{ "Tom", "A Grade" }, 
-			{ "Naveen", "A+ Grade" }, 
-			}).collect(Collectors.toMap(data -> data[0], data -> data[1]));
+		Map<String, String> map4 = Stream.of(new String[][] { { "Tom", "A Grade" }, { "Naveen", "A+ Grade" }, })
+				.collect(Collectors.toMap(data -> data[0], data -> data[1]));
 		System.out.println(map4.get("Tom"));
 		map4.put("Lisa", "A++ Grade");
 		System.out.println(map4.get("Lisa"));

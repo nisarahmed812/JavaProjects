@@ -21,7 +21,7 @@ public class ListToStream {
 		stringStream.forEach(s -> System.out.println(s));
 
 		System.out.println("--------------------------------------");
-		
+
 		// Create an ArrayList of integers
 		List<Integer> intList = new ArrayList<>();
 		intList.add(1);

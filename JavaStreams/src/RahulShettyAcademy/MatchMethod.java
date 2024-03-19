@@ -6,7 +6,7 @@ import java.util.List;
 public class MatchMethod {
 
 	public static void main(String[] args) {
-		
+
 		// converting arrays to arraylist
 		List<String> names = Arrays.asList("Abhijeet", "Don", "Alekhya", "Adam", "Ram");
 

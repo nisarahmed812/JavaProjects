@@ -17,16 +17,16 @@ public class HashMapToArrayList {
 		System.out.println("------------convert HashMap keys into ArrayList-----------------");
 		ArrayList<String> compNamesList = new ArrayList<String>(compMap.keySet());
 		System.out.println(compNamesList);
-		
+
 		for (String t : compNamesList) {
 			System.out.println(t);
 		}
-		
+
 		// convert HashMap values into ArrayList
 		System.out.println("------------convert HashMap values into ArrayList-----------------");
 		ArrayList<Integer> empValuesList = new ArrayList<Integer>(compMap.values());
 		System.out.println(empValuesList);
-		
+
 		for (int e : empValuesList) {
 			System.out.println(e);
 		}

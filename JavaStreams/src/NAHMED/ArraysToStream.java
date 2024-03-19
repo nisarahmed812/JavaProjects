@@ -13,7 +13,7 @@ public class ArraysToStream {
 		intStream.forEach(s -> System.out.println(s));
 
 		System.out.println("--------------------------------------");
-		
+
 		String[] stringArray = { "apple", "banana", "cherry", "date" };
 
 		Stream<String> stringStream = Arrays.stream(stringArray);

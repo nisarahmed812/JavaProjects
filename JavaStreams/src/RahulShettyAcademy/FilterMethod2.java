@@ -13,7 +13,7 @@ public class FilterMethod2 {
 		System.out.println(f);
 
 		System.out.println("-----------------------------");
-		
+
 		long t = Stream.of("Abhijeet", "Don", "Alekhya", "Adam", "Ram").filter(s -> {
 			s.startsWith("A");
 			return true;

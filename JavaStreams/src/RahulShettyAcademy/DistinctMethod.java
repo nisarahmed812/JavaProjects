@@ -14,12 +14,12 @@ public class DistinctMethod {
 		System.out.println(ls.get(0));
 
 		System.out.println("--------------------------");
-		
+
 		// print unique number from this array
 		// sort the array
 		List<Integer> values = Arrays.asList(3, 2, 2, 7, 5, 1, 9, 7);
 		values.stream().distinct().forEach(s -> System.out.println(s));
-		
+
 		System.out.println("--------------------------");
 
 		List<Integer> li = values.stream().distinct().sorted().collect(Collectors.toList());
