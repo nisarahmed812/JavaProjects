@@ -1,21 +1,18 @@
 package javaOOPS;
 
 public class ParentClass {
-	
+
 	String color = "red";
-	
-	public void gear()
-	{
+
+	public void gear() {
 		System.out.println("gear code is implemented");
 	}
-	
-	public void brakes()
-	{
+
+	public void brakes() {
 		System.out.println("brakes code is implemented");
 	}
-	
-	public void audioSystem()
-	{
+
+	public void audioSystem() {
 		System.out.println("parent audioSystem code is implemented");
 	}
 
