@@ -6,15 +6,15 @@ public class UniqueNumbers {
 	public static void main(String[] args) {
 		// print unique numbers from the array
 
-		int[] a = { 4, 5, 5, 5, 4, 6, 6, 9, 4 };
-		ArrayList<Integer> aList = new ArrayList<Integer>();
+		int[] arr = { 4, 5, 5, 5, 4, 6, 6, 9, 4 };
+		ArrayList<Integer> arrList = new ArrayList<Integer>();
 
-		for (int i = 0; i < a.length; i++) {
-			if (!aList.contains(a[i])) {
-				aList.add(a[i]);
+		for (int i = 0; i < arr.length; i++) {
+			if (!arrList.contains(arr[i])) {
+				arrList.add(arr[i]);
 			}
 		}
-		for (int unique : aList) {
+		for (int unique : arrList) {
 			System.out.println("Unique numbers are: " + unique);
 		}
 	}

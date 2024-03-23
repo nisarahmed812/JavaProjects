@@ -8,8 +8,8 @@ public class CountEvenAndOddDigits {
 		int oddCount = 0;
 
 		while (num > 0) { // 1234 123 12 1
-			int rem = num % 10; // 4 3 2 1
-			if (rem % 2 == 0) {
+			int lastDigit = num % 10; // 4 3 2 1
+			if (lastDigit % 2 == 0) {
 				evenCount++; // 1 2
 			} else {
 				oddCount++; // 1 2

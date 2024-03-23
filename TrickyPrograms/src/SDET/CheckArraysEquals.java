@@ -5,10 +5,10 @@ import java.util.Arrays;
 public class CheckArraysEquals {
 
 	public static void main(String[] args) {
-		int a[] = { 1, 4, 5, 7 };
-		int b[] = { 6, 4, 5, 7 };
+		int arr1[] = { 1, 4, 5, 7 };
+		int arr2[] = { 6, 4, 5, 7 };
 
-		boolean status = Arrays.equals(a, b);
+		boolean status = Arrays.equals(arr1, arr2);
 
 		if (status == true) {
 			System.out.println("Arrays are equal");
@@ -19,14 +19,14 @@ public class CheckArraysEquals {
 		System.out.println("--------------------------");
 
 		boolean status2 = true;
-		if (a.length == b.length) {
-			for (int i = 0; i < a.length; i++) {
-				if (a[i] != b[i]) {
+		if (arr1.length == arr2.length) {
+			for (int i = 0; i < arr1.length; i++) {
+				if (arr1[i] != arr2[i]) {
 					status2 = false;
 					break;
 				}
 			}
-		} 
+		}
 
 		if (status2 == true) {
 			System.out.println("Arrays are equal");

@@ -7,15 +7,15 @@ public class ReverseString {
 		// verify if string is Palindrome or not
 		// Palindrome means string is same in both forward/reverse order like madam
 
-		String s = "madam";
-		String t = "";
+		String str = "madam";
+		String temp = "";
 		
-		for (int i = s.length() - 1; i >= 0; i--) {
-			t = t + s.charAt(i);
+		for (int i = str.length() - 1; i >= 0; i--) {
+			temp = temp + str.charAt(i);
 		}
-		System.out.println(t);
+		System.out.println(temp);
 		
-		if(s.equals(t)) {
+		if(str.equals(temp)) {
 			System.out.println("String is Palindrome");
 		}
 	}

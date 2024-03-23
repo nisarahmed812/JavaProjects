@@ -6,14 +6,14 @@ public class ReverseString {
 		// Reverse a String
 
 		String str = "ABCD";
-		String rev = "";
+		String temp = "";
 
 		char[] ch = str.toCharArray();
 
 		for (int i = ch.length - 1; i >= 0; i--) {
-			rev = rev + ch[i];
+			temp = temp + ch[i];
 		}
-		System.out.println(rev);
+		System.out.println(temp);
 
 		String str2 = "ABCD";
 		StringBuffer sb = new StringBuffer(str2);
