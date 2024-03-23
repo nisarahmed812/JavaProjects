@@ -6,10 +6,12 @@ public class Power {
 		int num = 153;
 		int oriNum = num;
 		int count = 0;
+		
 		while (num != 0) {
 			num = num / 10;
 			count++;
 		}
+		
 		System.out.println("Power of " + oriNum + " is: " + count);
 	}
 
