@@ -15,6 +15,7 @@ public class NumbersFrequency {
 		}
 
 		HashMap<Long, Integer> digitMap = new HashMap<Long, Integer>();
+		
 		while (number != 0) {
 			long lastDigit = number % 10;
 			if (digitMap.containsKey(lastDigit)) {
