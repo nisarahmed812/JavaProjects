@@ -8,9 +8,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
-import net.sourceforge.tess4j.ITesseract;
-import net.sourceforge.tess4j.Tesseract;
-import net.sourceforge.tess4j.TesseractException;
 
 public class AmazonTesting {
 
@@ -42,27 +39,6 @@ public class AmazonTesting {
 		// Find the puzzle image element and get its source
 		WebElement puzzleImageElement = driver.findElement(By.cssSelector("img[alt='captcha']"));
 		String puzzleImageUrl = puzzleImageElement.getAttribute("src");
-
-		// Download the image and process it (if necessary)
-		// Use Tesseract OCR to extract text from the image
-		ITesseract tesseract = new Tesseract();
-		try {
-			String puzzleText = tesseract.doOCR(new java.io.File(puzzleImageUrl));
-
-			// Solve the puzzle (analyze the extracted text to determine the solution)
-			// Here, we assume the puzzle is a simple math problem
-			int solution = Integer.parseInt(puzzleText); // Parse the text to an integer for calculation
-			System.out.println(solution);
-			// Enter the solution into the input field
-			WebElement solutionInput = driver.findElement(By.id("solution_input"));
-			solutionInput.sendKeys(Integer.toString(solution));
-
-			// Submit the form
-			WebElement submitButton = driver.findElement(By.id("submit_button"));
-			submitButton.click();
-		} catch (TesseractException e) {
-			e.printStackTrace();
-		}
 
 		// click on search field
 		WebElement searchField = driver.findElement(By.id("twotabsearchtextbox"));
