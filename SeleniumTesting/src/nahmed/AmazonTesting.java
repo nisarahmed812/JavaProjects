@@ -36,10 +36,6 @@ public class AmazonTesting {
 		password.sendKeys("Testpass@123");
 		password.sendKeys(Keys.ENTER);
 
-		// Find the puzzle image element and get its source
-		WebElement puzzleImageElement = driver.findElement(By.cssSelector("img[alt='captcha']"));
-		String puzzleImageUrl = puzzleImageElement.getAttribute("src");
-
 		// click on search field
 		WebElement searchField = driver.findElement(By.id("twotabsearchtextbox"));
 		searchField.click();
